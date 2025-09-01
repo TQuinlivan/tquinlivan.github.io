@@ -1,3 +1,6 @@
+title: Minimal theme
+logo: /assets/img/logo.JPG
+description: Minimal is a theme for GitHub Pages.
+show_downloads: true
+google_analytics:
 theme: jekyll-theme-minimal
-title: Torin Quinlivan's homepage
-description: Access lecture notes and more!
