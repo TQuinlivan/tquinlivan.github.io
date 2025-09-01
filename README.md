@@ -1,2 +1,2 @@
-# tquinlivan.github.io
+# Torin Quinlivan - Knox College
 Torin Quinlivan Website
