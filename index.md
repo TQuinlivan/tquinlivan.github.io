@@ -10,3 +10,4 @@ Here you can find my lecture notes and other materials.
 - [Lecture #2: Linear Functions, Quadratic Functions, Compositions](./math145-lectures/Lecture2.html).
 - [Lecture #3: Transforming and Combining Functions](./math145-lectures/Lecture3.html).
 - [Lecture #4: Functions of Several Variables](./math145-lectures/Lecture4.html).
+- [Lecture #5: Limits and Velocity](./math145-lectures/Lecture5.html).
