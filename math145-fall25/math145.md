@@ -5,6 +5,7 @@ layout: default
 # Course Information
 
 - [Syllabus](./math145-syllabus.pdf)
+- [Tentative Schedule](./math145-schedule.pdf)
 
 # Lecture Slides
 
