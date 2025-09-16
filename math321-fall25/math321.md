@@ -9,4 +9,4 @@ layout: default
 
 # Lecture Slides
 
-- [Lecture #1: Models and Functions; Rates of Change](./math321-lectures/Lecture1.html) ([PDF](./math321-lectures/Lecture1.pdf)).
+- [Lecture #1: Sets, Permutations and Combinations](./math321-lectures/Lecture1.html) ([PDF](./math321-lectures/Lecture1.pdf)).
