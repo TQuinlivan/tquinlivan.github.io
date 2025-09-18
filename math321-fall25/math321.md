@@ -10,3 +10,4 @@ layout: default
 # Lecture Slides
 
 - [Lecture #1: Sets, Permutations and Combinations](./math321-lectures/Lecture1.html) ([PDF](./math321-lectures/Lecture1.pdf)).
+- [Lecture #2: Foundations of Probability](./math321-lectures/Lecture2.html) ([PDF](./math321-lectures/Lecture2.pdf)).
