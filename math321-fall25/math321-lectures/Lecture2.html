@@ -442,7 +442,7 @@
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Torin Quinlivan">
-  <meta name="dcterms.date" content="2025-09-18">
+  <meta name="dcterms.date" content="2025-09-19">
   <title>Lecture #2: Foundations of Probability</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1021,11 +1021,11 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
     </div>
 </div>
 
-  <p class="date">September 18, 2025</p>
+  <p class="date">September 19, 2025</p>
 </section>
 <section id="what-is-probability" class="slide level2">
 <h2>What is Probability?</h2>
-<p>A <span class="definition">probability <span class="math inline">\(p\)</span></span> of an event is a number $0 p .</p>
+<p>A <span class="definition">probability <span class="math inline">\(p\)</span></span> of an event is a number <span class="math inline">\(0 \le p \le 1\)</span>.</p>
 <p>The <span class="definition">frequentist interpretation</span> is that <span class="math inline">\(p\)</span> is the proportion of times the event will occur if I repeat the experiment over and over.</p>
 <p>The <span class="definition">Bayesian interpretation</span> is that <span class="math inline">\(p\)</span> is the likelihood of the event given what I believe to be true. (We can update this belief as we get more information.)</p>
 </section>
@@ -1047,7 +1047,7 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
 <section id="probability-a-formal-approach" class="slide level2">
 <h2>Probability: A Formal Approach</h2>
 <p>Let’s formalize our definition of probability, using set theory:</p>
-<p>A <span class="definition">probability space</span> is a pair <span class="math inline">\((\Omega, P)\)</span>, where <span class="math inline">\(\Omega\)</span> is a set called the <span class="definition">sample space</span> consisting of <span class="definition">outcomes</span> or <span class="definition">events</span> <span class="math inline">\(A \subseteqq \Omega\)</span>, and <span class="math inline">\(P\)</span> is a function from <span class="math inline">\(P : \mathcal{P}(\Omega) \rightarrow [0,1]\)</span> such that</p>
+<p>A <span class="definition">probability space</span> is a pair <span class="math inline">\((\Omega, P)\)</span>, where <span class="math inline">\(\Omega\)</span> is a set called the <span class="definition">sample space</span> consisting of <span class="definition">outcomes</span> or <span class="definition">events</span> <span class="math inline">\(A \subseteq \Omega\)</span>, and <span class="math inline">\(P\)</span> is a function from <span class="math inline">\(P : \mathcal{P}(\Omega) \rightarrow [0,1]\)</span> such that</p>
 <ol type="1">
 <li><p><span class="math inline">\(\forall A \in \mathcal{P}(\Omega) \; (P(A) \ge 0)\)</span>, (For all events <span class="math inline">\(A\)</span> in the sample space <span class="math inline">\(\Omega\)</span>, the probability of the event <span class="math inline">\(A\)</span> is <span class="math inline">\(P(A) \ge 0\)</span>.)</p></li>
 <li><p><span class="math inline">\(P(\Omega) = 1\)</span>, (The probability of the sample space <span class="math inline">\(\Omega\)</span> is 1, as some outcome must occur each experiment.)</p></li>
@@ -1061,19 +1061,23 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
   \forall A \in \mathcal{P}(\Omega) \; (P(\overline{A}) = 1 - P(A)).
 \]</span></p>
 <p>What does this mean in English?</p>
-<p>. . .</p>
-<p>For all events <span class="math inline">\(A\)</span>, the probability of the complement of the event, <span class="math inline">\(\overline{A}\)</span> is <span class="math inline">\(1\)</span> minus the probability of the event <span class="math inline">\(A\)</span>.</p>
+<div class="fragment">
+<p>For all events <span class="math inline">\(A\)</span>, the probability of the complement of the event, <span class="math inline">\(\overline{A}\)</span>, is <span class="math inline">\(1\)</span> minus the probability of the event <span class="math inline">\(A\)</span>.</p>
+</div>
+<div class="fragment">
 <p>This makes intuitive sense. If the Bears have a <span class="math inline">\(46\%\)</span> chance of winning on Sunday, they have a <span class="math inline">\(100\% - 46\% = 54\%\)</span> chance of not winning.</p>
+</div>
 </section>
 <section id="inclusionexclusion-principle" class="slide level2">
 <h2>Inclusion/Exclusion Principle</h2>
 <h3 id="corollary-inclusionexclusion-principle">Corollary (Inclusion/Exclusion Principle):</h3>
 <p><span class="math display">\[
-  \forall A, B \in \mathcal{P}(\Omega) \; (P(A \cup B) = P(A) + P(B) - P(A \cap B.
+  \forall A, B \in \mathcal{P}(\Omega) \; (P(A \cup B) = P(A) + P(B) - P(A \cap B)).
 \]</span></p>
 <p>What does this mean in English?</p>
-<p>. . .</p>
+<div class="fragment">
 <p>For any two events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, the probability of the union of the two events is equal to the probability of <span class="math inline">\(A\)</span> plus the probability of <span class="math inline">\(B\)</span> minus the intersection of <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> (because it’s being double counted).</p>
+</div>
 </section>
 <section id="inclusionexclusion-principle-1" class="slide level2">
 <h2>Inclusion/Exclusion Principle</h2>
@@ -1084,7 +1088,7 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
 <p>This can be extended to more than two events, with the pluses and minuses alternating:</p>
 <p><span class="math display">\[
 \begin{aligned}
-  P \left( \bigcup A_i \right) &amp;= A_1 + A_2 + \dots + A_n \\
+  P \left( \bigcup A_i \right) &amp;= P(A_1) +P(A_2) + \dots + P(A_n) \\
   &amp;\quad - \, P(A_1 \cap A_2) - P(A_1 \cap A_3) - \dots - P(A_{n-1} \cap A_n) \\
   &amp;\quad + \, P(A_1 \cap A_2 \cap A_3) + P(A_1 \cap A_2 \cap A_4) + \dots \\
   &amp;\quad + \, P(A_{n-2} \cap A_{n-1} \cap A_n) - P(A_1 \cap A_2 \cap A_3 \cap A_4) \\
@@ -1134,20 +1138,20 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
 <p>Suppose we roll two dice and take the sum of the values. The probability distribution for <span class="math inline">\(X\)</span> is:</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="yqgmloddnp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#yqgmloddnp table {
+<div id="bvgrbdkilv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#bvgrbdkilv table {
 font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 }
-#yqgmloddnp thead, #yqgmloddnp tbody, #yqgmloddnp tfoot, #yqgmloddnp tr, #yqgmloddnp td, #yqgmloddnp th {
+#bvgrbdkilv thead, #bvgrbdkilv tbody, #bvgrbdkilv tfoot, #bvgrbdkilv tr, #bvgrbdkilv td, #bvgrbdkilv th {
 border-style: none;
 }
-#yqgmloddnp p {
+#bvgrbdkilv p {
 margin: 0;
 padding: 0;
 }
-#yqgmloddnp .gt_table {
+#bvgrbdkilv .gt_table {
 display: table;
 border-collapse: collapse;
 line-height: normal;
@@ -1172,11 +1176,11 @@ border-left-style: none;
 border-left-width: 2px;
 border-left-color: #D3D3D3;
 }
-#yqgmloddnp .gt_caption {
+#bvgrbdkilv .gt_caption {
 padding-top: 4px;
 padding-bottom: 4px;
 }
-#yqgmloddnp .gt_title {
+#bvgrbdkilv .gt_title {
 color: #333333;
 font-size: 125%;
 font-weight: initial;
@@ -1187,7 +1191,7 @@ padding-right: 5px;
 border-bottom-color: #FFFFFF;
 border-bottom-width: 0;
 }
-#yqgmloddnp .gt_subtitle {
+#bvgrbdkilv .gt_subtitle {
 color: #333333;
 font-size: 85%;
 font-weight: initial;
@@ -1198,7 +1202,7 @@ padding-right: 5px;
 border-top-color: #FFFFFF;
 border-top-width: 0;
 }
-#yqgmloddnp .gt_heading {
+#bvgrbdkilv .gt_heading {
 background-color: #FFFFFF;
 text-align: center;
 border-bottom-color: #FFFFFF;
@@ -1209,12 +1213,12 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#yqgmloddnp .gt_bottom_border {
+#bvgrbdkilv .gt_bottom_border {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#yqgmloddnp .gt_col_headings {
+#bvgrbdkilv .gt_col_headings {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -1228,7 +1232,7 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#yqgmloddnp .gt_col_heading {
+#bvgrbdkilv .gt_col_heading {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -1247,7 +1251,7 @@ padding-left: 5px;
 padding-right: 5px;
 overflow-x: hidden;
 }
-#yqgmloddnp .gt_column_spanner_outer {
+#bvgrbdkilv .gt_column_spanner_outer {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -1258,13 +1262,13 @@ padding-bottom: 0;
 padding-left: 4px;
 padding-right: 4px;
 }
-#yqgmloddnp .gt_column_spanner_outer:first-child {
+#bvgrbdkilv .gt_column_spanner_outer:first-child {
 padding-left: 0;
 }
-#yqgmloddnp .gt_column_spanner_outer:last-child {
+#bvgrbdkilv .gt_column_spanner_outer:last-child {
 padding-right: 0;
 }
-#yqgmloddnp .gt_column_spanner {
+#bvgrbdkilv .gt_column_spanner {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
@@ -1275,10 +1279,10 @@ overflow-x: hidden;
 display: inline-block;
 width: 100%;
 }
-#yqgmloddnp .gt_spanner_row {
+#bvgrbdkilv .gt_spanner_row {
 border-bottom-style: hidden;
 }
-#yqgmloddnp .gt_group_heading {
+#bvgrbdkilv .gt_group_heading {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -1303,7 +1307,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 text-align: left;
 }
-#yqgmloddnp .gt_empty_group_heading {
+#bvgrbdkilv .gt_empty_group_heading {
 padding: 0.5px;
 color: #333333;
 background-color: #FFFFFF;
@@ -1317,13 +1321,13 @@ border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 vertical-align: middle;
 }
-#yqgmloddnp .gt_from_md > :first-child {
+#bvgrbdkilv .gt_from_md > :first-child {
 margin-top: 0;
 }
-#yqgmloddnp .gt_from_md > :last-child {
+#bvgrbdkilv .gt_from_md > :last-child {
 margin-bottom: 0;
 }
-#yqgmloddnp .gt_row {
+#bvgrbdkilv .gt_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -1341,7 +1345,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 overflow-x: hidden;
 }
-#yqgmloddnp .gt_stub {
+#bvgrbdkilv .gt_stub {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -1353,7 +1357,7 @@ border-right-color: #D3D3D3;
 padding-left: 5px;
 padding-right: 5px;
 }
-#yqgmloddnp .gt_stub_row_group {
+#bvgrbdkilv .gt_stub_row_group {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -1366,13 +1370,13 @@ padding-left: 5px;
 padding-right: 5px;
 vertical-align: top;
 }
-#yqgmloddnp .gt_row_group_first td {
+#bvgrbdkilv .gt_row_group_first td {
 border-top-width: 2px;
 }
-#yqgmloddnp .gt_row_group_first th {
+#bvgrbdkilv .gt_row_group_first th {
 border-top-width: 2px;
 }
-#yqgmloddnp .gt_summary_row {
+#bvgrbdkilv .gt_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -1381,14 +1385,14 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#yqgmloddnp .gt_first_summary_row {
+#bvgrbdkilv .gt_first_summary_row {
 border-top-style: solid;
 border-top-color: #D3D3D3;
 }
-#yqgmloddnp .gt_first_summary_row.thick {
+#bvgrbdkilv .gt_first_summary_row.thick {
 border-top-width: 2px;
 }
-#yqgmloddnp .gt_last_summary_row {
+#bvgrbdkilv .gt_last_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -1397,7 +1401,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#yqgmloddnp .gt_grand_summary_row {
+#bvgrbdkilv .gt_grand_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -1406,7 +1410,7 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#yqgmloddnp .gt_first_grand_summary_row {
+#bvgrbdkilv .gt_first_grand_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -1415,7 +1419,7 @@ border-top-style: double;
 border-top-width: 6px;
 border-top-color: #D3D3D3;
 }
-#yqgmloddnp .gt_last_grand_summary_row_top {
+#bvgrbdkilv .gt_last_grand_summary_row_top {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -1424,10 +1428,10 @@ border-bottom-style: double;
 border-bottom-width: 6px;
 border-bottom-color: #D3D3D3;
 }
-#yqgmloddnp .gt_striped {
+#bvgrbdkilv .gt_striped {
 background-color: rgba(128, 128, 128, 0.05);
 }
-#yqgmloddnp .gt_table_body {
+#bvgrbdkilv .gt_table_body {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -1435,7 +1439,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#yqgmloddnp .gt_footnotes {
+#bvgrbdkilv .gt_footnotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -1448,7 +1452,7 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#yqgmloddnp .gt_footnote {
+#bvgrbdkilv .gt_footnote {
 margin: 0px;
 font-size: 90%;
 padding-top: 4px;
@@ -1456,7 +1460,7 @@ padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#yqgmloddnp .gt_sourcenotes {
+#bvgrbdkilv .gt_sourcenotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -1469,64 +1473,64 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#yqgmloddnp .gt_sourcenote {
+#bvgrbdkilv .gt_sourcenote {
 font-size: 90%;
 padding-top: 4px;
 padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#yqgmloddnp .gt_left {
+#bvgrbdkilv .gt_left {
 text-align: left;
 }
-#yqgmloddnp .gt_center {
+#bvgrbdkilv .gt_center {
 text-align: center;
 }
-#yqgmloddnp .gt_right {
+#bvgrbdkilv .gt_right {
 text-align: right;
 font-variant-numeric: tabular-nums;
 }
-#yqgmloddnp .gt_font_normal {
+#bvgrbdkilv .gt_font_normal {
 font-weight: normal;
 }
-#yqgmloddnp .gt_font_bold {
+#bvgrbdkilv .gt_font_bold {
 font-weight: bold;
 }
-#yqgmloddnp .gt_font_italic {
+#bvgrbdkilv .gt_font_italic {
 font-style: italic;
 }
-#yqgmloddnp .gt_super {
+#bvgrbdkilv .gt_super {
 font-size: 65%;
 }
-#yqgmloddnp .gt_footnote_marks {
+#bvgrbdkilv .gt_footnote_marks {
 font-size: 75%;
 vertical-align: 0.4em;
 position: initial;
 }
-#yqgmloddnp .gt_asterisk {
+#bvgrbdkilv .gt_asterisk {
 font-size: 100%;
 vertical-align: 0;
 }
-#yqgmloddnp .gt_indent_1 {
+#bvgrbdkilv .gt_indent_1 {
 text-indent: 5px;
 }
-#yqgmloddnp .gt_indent_2 {
+#bvgrbdkilv .gt_indent_2 {
 text-indent: 10px;
 }
-#yqgmloddnp .gt_indent_3 {
+#bvgrbdkilv .gt_indent_3 {
 text-indent: 15px;
 }
-#yqgmloddnp .gt_indent_4 {
+#bvgrbdkilv .gt_indent_4 {
 text-indent: 20px;
 }
-#yqgmloddnp .gt_indent_5 {
+#bvgrbdkilv .gt_indent_5 {
 text-indent: 25px;
 }
-#yqgmloddnp .katex-display {
+#bvgrbdkilv .katex-display {
 display: inline-flex !important;
 margin-bottom: 0.75em !important;
 }
-#yqgmloddnp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#bvgrbdkilv div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
 height: 0px !important;
 }
 </style>
