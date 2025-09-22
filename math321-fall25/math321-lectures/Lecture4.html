@@ -1115,13 +1115,13 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
 </section>
 <section id="the-expected-value-of-a-random-variable" class="slide level2">
 <h2>The Expected Value of a Random Variable</h2>
-<p><strong>Definition:</strong> Let <span class="math inline">\(X\)</span> be a discrete random variable with the probability function <span class="math inline">\(p_X(x)\)</span>. Then the <span class="definition">expected value (or mean)</span> of <span class="math inline">\(X\)</span>, <span class="math inline">\(E(X)\)</span>, is defined to be: <span class="math display">\[
+<p><strong>Definition:</strong> Let <span class="math inline">\(X\)</span> be a discrete random variable with the probability mass function <span class="math inline">\(p_X(x)\)</span>. Then the <span class="definition">expected value (or mean)</span> of <span class="math inline">\(X\)</span>, <span class="math inline">\(E(X)\)</span>, is defined to be: <span class="math display">\[
   E(X) = \sum_x x \, p_X(x).
 \]</span> If <span class="math inline">\(p_X(x)\)</span> is an accurate characterization of the population frequency distribution,then <span class="math inline">\(E(X) = \mu\)</span>, the population mean.</p>
 </section>
 <section id="the-expected-value-of-a-function-of-a-random-variable" class="slide level2">
 <h2>The Expected Value of a Function of a Random Variable</h2>
-<p><strong>Definition:</strong> Let <span class="math inline">\(X\)</span> be a discrete random variable with probability function <span class="math inline">\(p_X(x)\)</span> and <span class="math inline">\(g(X)\)</span> be a real-valued function of <span class="math inline">\(X\)</span>. Then the expected value of <span class="math inline">\(g(X)\)</span> is given by: <span class="math display">\[
+<p><strong>Definition:</strong> Let <span class="math inline">\(X\)</span> be a discrete random variable with probability mass function <span class="math inline">\(p_X(x)\)</span> and <span class="math inline">\(g(X)\)</span> be a real-valued function of <span class="math inline">\(X\)</span>. Then the expected value of <span class="math inline">\(g(X)\)</span> is given by: <span class="math display">\[
   E(g(X)) = \sum_x g(x) \, p_X(x).
 \]</span></p>
 </section>
@@ -1141,14 +1141,14 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
 </section>
 <section id="properties-of-the-expected-value" class="slide level2">
 <h2>Properties of the Expected Value</h2>
-<p><strong>Theorem:</strong> Let <span class="math inline">\(X\)</span> be a discrete random variable with probability function <span class="math inline">\(p_X(x)\)</span> and <span class="math inline">\(c\)</span> be a constant. Then <span class="math inline">\(E(c) = c\)</span>.</p>
+<p><strong>Theorem:</strong> Let <span class="math inline">\(X\)</span> be a discrete random variable with probability mass function <span class="math inline">\(p_X(x)\)</span> and <span class="math inline">\(c\)</span> be a constant. Then <span class="math inline">\(E(c) = c\)</span>.</p>
 <div class="fragment">
-<p><strong>Theorem:</strong> Let <span class="math inline">\(X\)</span> be a discrete random variable with probability function <span class="math inline">\(p_X(x)\)</span>, <span class="math inline">\(g(X)\)</span> be a function of <span class="math inline">\(X\)</span>, and <span class="math inline">\(c\)</span> be a constant. Then: <span class="math display">\[
+<p><strong>Theorem:</strong> Let <span class="math inline">\(X\)</span> be a discrete random variable with probability mass function <span class="math inline">\(p_X(x)\)</span>, <span class="math inline">\(g(X)\)</span> be a function of <span class="math inline">\(X\)</span>, and <span class="math inline">\(c\)</span> be a constant. Then: <span class="math display">\[
   E[c \times g(X)] = c \times E[g(X)].
 \]</span></p>
 </div>
 <div class="fragment">
-<p><strong>Theorem:</strong> Let <span class="math inline">\(X\)</span> be a discrete random variable with probability function <span class="math inline">\(p_X(x)\)</span> and <span class="math inline">\(g_1(X),\, g_2(X),\, \dots,\, g_k(X)\)</span> be <span class="math inline">\(k\)</span> functions of <span class="math inline">\(X\)</span>. Then: <span class="math display">\[
+<p><strong>Theorem:</strong> Let <span class="math inline">\(X\)</span> be a discrete random variable with probability mass function <span class="math inline">\(p_X(x)\)</span> and <span class="math inline">\(g_1(X),\, g_2(X),\, \dots,\, g_k(X)\)</span> be <span class="math inline">\(k\)</span> functions of <span class="math inline">\(X\)</span>. Then: <span class="math display">\[
   E\left[\sum_{i=1}^k g_i(X)\right] = \sum_{i=1}^k E\big[g_i(X)\big].
 \]</span></p>
 </div>
@@ -1169,12 +1169,26 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
   V(X) = E[(X − \mu)^2].
 \]</span></p>
 <div class="fragment">
-<p><strong>Theorem:</strong> Let <span class="math inline">\(X\)</span> be a discrete random variable with probability function <span class="math inline">\(p_X(x)\)</span> and finite mean <span class="math inline">\(E(X) = \mu\)</span>; then: <span class="math display">\[
+<p><strong>Theorem:</strong> Let <span class="math inline">\(X\)</span> be a discrete random variable with probability mass function <span class="math inline">\(p_X(x)\)</span> and finite mean <span class="math inline">\(E(X) = \mu\)</span>; then: <span class="math display">\[
   V(X) = E[(X − \mu)^2] = E(X^2) - \big[E(X)\big]^2
 \]</span></p>
 </div>
 <div class="fragment">
 <p>This second formula is a lot easier to use!</p>
+</div>
+</section>
+<section id="properties-of-the-variance" class="slide level2">
+<h2>Properties of the Variance</h2>
+<p><strong>Theorem:</strong> Let <span class="math inline">\(X\)</span> be a discrete random variable with probability mass function <span class="math inline">\(p_X(x)\)</span> and <span class="math inline">\(c\)</span> be a constant. Then <span class="math inline">\(V(c) = 0\)</span>.</p>
+<div class="fragment">
+<p><strong>Theorem:</strong> Let <span class="math inline">\(X\)</span> be a discrete random variable with probability mass function <span class="math inline">\(p_X(x)\)</span> and <span class="math inline">\(c\)</span> be a constant. Then: <span class="math display">\[
+  V[c \times X] = c^2 \times V[X].
+\]</span></p>
+</div>
+<div class="fragment">
+<p><strong>Theorem:</strong> Let <span class="math inline">\(X_1,\, X_2,\, X_3,\, \dots\)</span> be discrete random variables with probability mass functions <span class="math inline">\(p_{X_1}(x),\, p_{X_2}(x),\, p_{X_3}(x),\, \dots\)</span>. Then: <span class="math display">\[
+  V\left[\sum_{i=1}^k X_i \right] = \sum_{i=1}^k V\big[ X_ i \big].
+\]</span></p>
 </div>
 
 </section>
