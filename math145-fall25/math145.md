@@ -15,3 +15,4 @@ layout: default
 - [Lecture #4: Functions of Several Variables](./math145-lectures/Lecture4.html) ([PDF Version](./math145-lectures/Lecture4.pdf)).
 - [Lecture #5: Limits and Velocity](./math145-lectures/Lecture5.html) ([PDF Version](./math145-lectures/Lecture5.pdf)).
 - [Lecture #6: The Derivative at a Point & Interpretations](./math145-lectures/Lecture6.html) ([PDF Version](./math145-lectures/Lecture6.pdf)).
+- [Lecture #7: The Derivative Function & Interpretations](./math145-lectures/Lecture7.html) ([PDF Version](./math145-lectures/Lecture7.pdf)).
