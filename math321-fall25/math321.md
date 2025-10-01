@@ -13,3 +13,4 @@ layout: default
 - [Lecture #2: Foundations of Probability](./math321-lectures/Lecture2.html) ([PDF Version](./math321-lectures/Lecture2.pdf)).
 - [Lecture #3: Independencce & Conditional Probability](./math321-lectures/Lecture3.html) ([PDF Version](./math321-lectures/Lecture3.pdf)).
 - [Lecture #4: Probability Spaces & Discrete Random Variables](./math321-lectures/Lecture4.html) ([PDF Version](./math321-lectures/Lecture4.pdf)).
+- [Lecture #5: Discrete Probability Distributions](./math321-lectures/Lecture5.html) ([PDF Version](./math321-lectures/Lecture5.pdf)).
