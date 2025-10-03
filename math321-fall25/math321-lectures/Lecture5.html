@@ -442,7 +442,7 @@
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Torin Quinlivan">
-  <meta name="dcterms.date" content="2025-10-01">
+  <meta name="dcterms.date" content="2025-10-02">
   <title>Lecture #5: Discrete Probability Distributions</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1021,7 +1021,7 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
     </div>
 </div>
 
-  <p class="date">October 1, 2025</p>
+  <p class="date">October 2, 2025</p>
 </section>
 <section id="motivating-example" class="slide level2">
 <h2>Motivating Example</h2>
@@ -1241,9 +1241,12 @@ p_X(x) = P(X = x) = \binom{n}{x} p^x (1-p)^x,
   p_X(x) = P(X = x) = \binom{x - 1}{r - 1} (1-p)^{x-r} p^r,
 \]</span></p>
 <p>for <span class="math inline">\(x \in \{ r, r+1, r+2, \dots \}\)</span>.</p>
+<div class="fragment">
+<p>Note that <span class="math inline">\(X \sim NB(1, p)\)</span> is the same as <span class="math inline">\(X \sim Geometric(p)\)</span>.</p>
+</div>
 </section>
-<section id="expected-value-and-variance-of-the-geometric-distribution-1" class="slide level2">
-<h2>Expected Value and Variance of the Geometric Distribution</h2>
+<section id="expected-value-and-variance-of-the-negative-binomial-distribution" class="slide level2">
+<h2>Expected Value and Variance of the Negative Binomial Distribution</h2>
 <p>The expected value of a <span class="math inline">\(\text{NB}(r, p)\)</span> distribution is: <span class="math display">\[
   E(X) = \frac{r}{p}.
 \]</span></p>
@@ -1257,10 +1260,105 @@ p_X(x) = P(X = x) = \binom{n}{x} p^x (1-p)^x,
 <h2>Negative Binomial Example</h2>
 <p>A geological study indicates that an exploratory oil well should strike oil with probability <span class="math inline">\(.2\)</span>.</p>
 <ol type="1">
-<li>What is the probability that the first strike comes on the third well drilled?</li>
 <li>What is the probability that the third strike comes on the seventh well drilled?</li>
-<li>What assumptions did you make to obtain the answers to parts (1) and (2)?</li>
+<li>What assumptions did you make to obtain the answer to part (1)?</li>
 <li>Find the mean and variance of the number of wells that must be drilled if the company wants to set up three producing wells.</li>
+</ol>
+</section>
+<section id="the-hypergeometric-distribution" class="slide level2">
+<h2>The Hypergeometric Distribution</h2>
+<p>Consider an urn with 8 red balls and 7 black balls in it. If I draw 5 balls from the urn, <em>without replacement</em>, what is the probability of the majority of the balls we pulled out are black?</p>
+<p>Let <span class="math inline">\(Y\)</span> be the number of black balls drawn from the urn in the five balls drawn.</p>
+<ul>
+<li class="fragment">What is the sample space for this experiment?</li>
+<li class="fragment">What might the probability mass function look like?</li>
+</ul>
+</section>
+<section id="the-hypergeometric-distribution-1" class="slide level2">
+<h2>THe Hypergeometric Distribution</h2>
+<div class="fragment">
+<p>The <span class="definition">hypergeometric distribution</span> is a random variable describes the probability of <span class="math inline">\(y\)</span> successes in <span class="math inline">\(n\)</span> draws, without replacement, from a finite population of size <span class="math inline">\(N\)</span> that contains exactly <span class="math inline">\(r\)</span> objects with that feature.</p>
+</div>
+<div class="fragment">
+<p>The hypergeometric distribution has three parameters, the <span class="definition">total number of objects in the population, <span class="math inline">\(N\)</span></span>, the <span class="definition">number of “successful” objects in the population, <span class="math inline">\(r\)</span></span>, and the the <span class="definition">number of objects drawn, <span class="math inline">\(n\)</span></span>.</p>
+</div>
+</section>
+<section id="pmf-of-the-hypereometric-distribution" class="slide level2">
+<h2>PMF of the Hypereometric Distribution</h2>
+<p>The probability mass function of a random variable <span class="math inline">\(X\)</span> with a geometric distribution is: <span class="math display">\[
+  p_X(x) = P(X = x) = \frac{\binom{r}{y} \binom{N-r}{n-y}}{\binom{N}{n}},
+\]</span></p>
+<p>where <span class="math inline">\(y\)</span> is an integer <span class="math inline">\(\{0,\, 1,\, 2,\, \dots,\, n\}\)</span>, subject to the restrictions <span class="math inline">\(y \le r\)</span> and <span class="math inline">\(n − y \le N − r\)</span>.</p>
+</section>
+<section id="expected-value-and-variance-of-the-hypergeometric-distribution" class="slide level2">
+<h2>Expected Value and Variance of the Hypergeometric Distribution</h2>
+<p>The expected value of a <span class="math inline">\(\text{Hypergeometric}(N, r, n)\)</span> distribution is: <span class="math display">\[
+  E(X) = \frac{nr}{N}.
+\]</span></p>
+<div class="fragment">
+<p>The variance of a <span class="math inline">\(\text{Hypergeometric}(N, r, n)\)</span> distribution is: <span class="math display">\[
+  V(X) = n \left( \frac{r}{N} \right) \left( \frac{N-r}{N} \right) \left( \frac{N-n}{N-1} \right).
+\]</span></p>
+</div>
+<div class="fragment">
+<p>The proof requires some algebra and facts about the binomial distribution, so I won’t show it here, but it’s not too hard to understand.</p>
+</div>
+</section>
+<section id="hypergeometric-distribution-example" class="slide level2">
+<h2>Hypergeometric Distribution Example</h2>
+<p><strong>Example:</strong></p>
+<p>An urn contains ten marbles, of which five are green, two are blue, and three are red. Three marbles are to be drawn from the urn, one at a time without replacement.</p>
+<ol type="1">
+<li class="fragment">What is the probability that all three marbles drawn will be green?</li>
+<li class="fragment">What is the probability that at most one marbles drawn will be green?</li>
+<li class="fragment">What is the mean of the number of green marbles drawn?</li>
+<li class="fragment">What is the variance of the number of green marbles drawn?</li>
+</ol>
+</section>
+<section id="the-poisson-distribution" class="slide level2">
+<h2>The Poisson Distribution</h2>
+<p>The manager at McDonald’s called me to ask for some help modelling his sales. In particular, he wants to predict the number of customers that will come through the drive-thru in an hour, so he can properly staff the window.</p>
+<p>Let <span class="math inline">\(X\)</span> be the number of customers that come through the drive-thru in an hour.</p>
+<ul>
+<li class="fragment">What is the sample space for this experiment?</li>
+<li class="fragment">What might the probability mass function look like?</li>
+</ul>
+</section>
+<section id="the-poisson-distribution-1" class="slide level2">
+<h2>The Poisson Distribution</h2>
+<p>he <span class="definition">Poisson distribution</span> is a random variable which expresses the probability of a given number of events occurring in a fixed interval of time or space if these events occur with a known constant mean rate and independently of the time since the last event.</p>
+<div class="fragment">
+<p>The Poisson distribution has one parameters, the <span class="definition">average rate of events, <span class="math inline">\(\lambda\)</span></span>.</p>
+</div>
+</section>
+<section id="pmf-of-the-poisson-distribution" class="slide level2">
+<h2>PMF of the Poisson Distribution</h2>
+<p>The probability mass function of a random variable <span class="math inline">\(X\)</span> with a Poisson distribution is: <span class="math display">\[
+  p_X(x) = P(X = x) = \frac{\lambda^y \, e^{-\lambda}}{y!},
+\]</span></p>
+<p>where <span class="math inline">\(y\)</span> is an non-negative integer and <span class="math inline">\(\lambda &gt; 0\)</span>..</p>
+</section>
+<section id="expected-value-and-variance-of-the-poisson-distribution" class="slide level2">
+<h2>Expected Value and Variance of the Poisson Distribution</h2>
+<p>The expected value of a <span class="math inline">\(\text{Poisson}(\lambda)\)</span> distribution is: <span class="math display">\[
+  E(X) = \lambda.
+\]</span></p>
+<div class="fragment">
+<p>The variance of a <span class="math inline">\(\text{Poisson}(\lambda)\)</span> distribution is: <span class="math display">\[
+  V(X) = \lambda.
+\]</span></p>
+</div>
+<div class="fragment">
+<p>How might you prove this?</p>
+</div>
+</section>
+<section id="poisson-distribution-example" class="slide level2">
+<h2>Poisson Distribution Example</h2>
+<p><strong>Example:</strong></p>
+<p>A certain type of tree has seedlings randomly dispersed in a large area, with the mean density of seedlings being approximately five per square yard.</p>
+<ol type="1">
+<li class="fragment">What is the probability that a single one square yard region will not have any seedlings?</li>
+<li class="fragment">If a forester randomly locates ten 1-square-yard sampling regions in the area, find the probability that none of the regions will contain seedlings.</li>
 </ol>
 
 </section>
