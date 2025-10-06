@@ -17,3 +17,4 @@ layout: default
 - [Lecture #6: The Derivative at a Point & Interpretations](./math145-lectures/Lecture6.html) ([PDF Version](./math145-lectures/Lecture6.pdf)).
 - [Lecture #7: The Derivative Function & Interpretations](./math145-lectures/Lecture7.html) ([PDF Version](./math145-lectures/Lecture7.pdf)).
 - [Lecture #8: Second Derivative, Differentiable Functions & Limits Revisited](./math145-lectures/Lecture8.html) ([PDF Version](./math145-lectures/Lecture8.pdf)).
+- [Lecture #9: Rules of Differentiation](./math145-lectures/Lecture9.html) ([PDF Version](./math145-lectures/Lecture9.pdf)).
