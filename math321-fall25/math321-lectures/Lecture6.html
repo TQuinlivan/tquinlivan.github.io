@@ -442,7 +442,7 @@
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Torin Quinlivan">
-  <meta name="dcterms.date" content="2025-10-05">
+  <meta name="dcterms.date" content="2025-10-06">
   <title>Lecture #6: Continuous Probability Distributions</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1021,7 +1021,7 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
     </div>
 </div>
 
-  <p class="date">October 5, 2025</p>
+  <p class="date">October 6, 2025</p>
 </section>
 <section id="recall-axioms-of-probability" class="slide level2">
 <h2>Recall: Axioms of Probability</h2>
@@ -1059,7 +1059,7 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
 </section>
 <section id="probability-density-functions" class="slide level2">
 <h2>Probability Density Functions</h2>
-<p>A <span class="definition">prbability density function <span class="math inline">\(f_X\)</span></span> of a random variable <span class="math inline">\(X\)</span> is a mapping <span class="math inline">\(f_X : \Omega \to \mathbb{R}\)</span>, with the properties</p>
+<p>A <span class="definition">probability density function <span class="math inline">\(f_X\)</span></span> of a random variable <span class="math inline">\(X\)</span> is a mapping <span class="math inline">\(f_X : \Omega \to \mathbb{R}\)</span>, with the properties</p>
 <ol type="1">
 <li><strong>Non-Negativity:</strong> <span class="math inline">\(f_X(x) \ge 0\)</span> for all <span class="math inline">\(x \in \Omega\)</span>.</li>
 <li><strong>Unity:</strong> <span class="math inline">\(\displaystyle\int_\Omega f_X(x) dx = 1\)</span>.</li>
@@ -1262,7 +1262,7 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
 \]</span></p>
 </div>
 <div class="fragment">
-<p>The variance of a uniformly distributed random variable is: <span class="math display">\[
+<p>The variance of a exponentially distributed random variable is: <span class="math display">\[
   V(X) = \beta^2.
 \]</span></p>
 </div>
@@ -1278,6 +1278,77 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
 <li class="fragment">What is the average amount of time a train will arrive past the scheduled time?</li>
 <li class="fragment">What is the variance of amount of time a train will arrive past the scheduled time?</li>
 </ol>
+</section>
+<section id="the-gamma-distribution" class="slide level2">
+<h2>The Gamma Distribution</h2>
+<p>Let <span class="math inline">\(X\)</span> be an <span class="definition">gamma random variable</span>.</p>
+<div class="fragment">
+<p>The probability density function of <span class="math inline">\(X\)</span> is: <span class="math display">\[
+  f_X(x) = \begin{cases}
+    \dfrac{1}{\Gamma(\alpha) \beta^\alpha} x^{\alpha - 1} e^{-\frac{x}{\beta}}, &amp; x \ge 0, \\
+    0, &amp; \text{otherwise},
+  \end{cases}
+\]</span> where <span class="math inline">\(\alpha &gt; 0\)</span> (shape) and <span class="math inline">\(\beta &gt; 0\)</span> (scale) are two parameters.</p>
+</div>
+</section>
+<section id="the-gamma-function" class="slide level2">
+<h2>The Gamma function</h2>
+<p><span class="math inline">\(\Gamma(z)\)</span> is the <span class="definition">gamma function</span>, defined as: <span class="math display">\[
+  \Gamma(z) = \int_0^\infty t^{z - 1} e^-t \, dt.
+\]</span></p>
+<p>More usefully, this function has the property: <span class="math display">\[
+  \Gamma(z) = z \Gamma(z - 1).
+\]</span></p>
+<p>If <span class="math inline">\(z \in \mathbb{Z}^+\)</span>, then <span class="math inline">\(Gamma(z) = (z-1)!\)</span> and <span class="math inline">\(|Gamma\left( \dfrac{1}{2} \right) = \sqrt{\pi}\)</span>.</p>
+</section>
+<section id="the-gamma-distribution-1" class="slide level2">
+<h2>The Gamma Distribution</h2>
+<p>We write <span class="math display">\[
+  X \sim \text{Gamma}(\alpha, \beta)
+\]</span> to mean that <span class="math inline">\(X\)</span> is drawn from an Gamma distribution with parameters <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span>.</p>
+<div class="fragment">
+<p>If <span class="math inline">\(X \sim \text{Gamma}(\alpha = 1, \beta)\)</span>, then <span class="math inline">\(X \sim \text{Exponential}(\beta)\)</span>.</p>
+</div>
+</section>
+<section id="the-gamma-distribution-2" class="slide level2">
+<h2>The Gamma Distribution</h2>
+<p>The mean of a Gamma distributed random variable is: <span class="math display">\[
+  E(X) = \alpha \beta.
+\]</span></p>
+<div class="fragment">
+<p>The variance of a Gamma distributed random variable is: <span class="math display">\[
+  V(X) = \alpha \beta^2.
+\]</span></p>
+</div>
+</section>
+<section id="the-beta-distribution" class="slide level2">
+<h2>The Beta Distribution</h2>
+<p>Let <span class="math inline">\(X\)</span> be an <span class="definition">beta random variable</span>.</p>
+<div class="fragment">
+<p>The probability density function of <span class="math inline">\(X\)</span> is: <span class="math display">\[
+  f_X(x) = \begin{cases}
+    \dfrac{\Gamma(\alpha + \beta)}{\Gamma(\alpha) \Gamma(\beta)} x^{\alpha - 1} (1 - x)^{\beta - 1}, &amp; 0 \le x \le 1, \\
+    0, &amp; \text{otherwise},
+  \end{cases}
+\]</span> where <span class="math inline">\(\alpha &gt; 0\)</span> and <span class="math inline">\(\beta &gt; 0\)</span> are two parameters.</p>
+</div>
+</section>
+<section id="the-beta-distribution-1" class="slide level2">
+<h2>The Beta Distribution</h2>
+<p>We write <span class="math display">\[
+  X \sim \text{Beta}(\alpha, \beta)
+\]</span> to mean that <span class="math inline">\(X\)</span> is drawn from an Beta distribution with parameters <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span>.</p>
+</section>
+<section id="the-beta-distribution-2" class="slide level2">
+<h2>The Beta Distribution</h2>
+<p>The mean of a Beta distributed random variable is: <span class="math display">\[
+  E(X) = \frac{\alpha}{\alpha + \beta}.
+\]</span></p>
+<div class="fragment">
+<p>The variance of a Beta distributed random variable is: <span class="math display">\[
+  V(X) = \frac{\alpha \beta}{(\alpha + \beta)^2 (\alpha + \beta + 1)}.
+\]</span></p>
+</div>
 
 </section>
     </div>
