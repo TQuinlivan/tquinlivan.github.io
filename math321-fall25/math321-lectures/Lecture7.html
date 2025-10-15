@@ -442,7 +442,7 @@
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Torin Quinlivan">
-  <meta name="dcterms.date" content="2025-10-10">
+  <meta name="dcterms.date" content="2025-10-14">
   <title>Lecture #7: The Normal Distribution</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1021,7 +1021,7 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
     </div>
 </div>
 
-  <p class="date">October 10, 2025</p>
+  <p class="date">October 14, 2025</p>
 </section>
 <section id="the-normal-distribution" class="slide level2">
 <h2>The Normal Distribution</h2>
@@ -1126,6 +1126,24 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
 <li><span class="math inline">\(P(\lvert X \rvert \ge b) = 1 - \Phi\left( \frac{b - \mu}{\sigma} \right) + \Phi\left( \frac{-b-\mu}{\sigma} \right)\)</span>.</li>
 </ol>
 </section>
+<section id="normal-distribution-example" class="slide level2">
+<h2>Normal Distribution Example</h2>
+<p>Intelligence Quotient (IQ) scores are defined to follow a Normal distribution with a mean of 100 and a standard deviation of 15. Use this information to answer the following questions:</p>
+<ol type="1">
+<li class="fragment">Find the probability that a randomly chosen person has an IQ less than 92.</li>
+<li class="fragment">Find the probability that a randomly chosen person has an IQ of 120 or greater.</li>
+<li class="fragment">Find the probability that a randomly chosen person has an IQ between 83 and 114.</li>
+</ol>
+</section>
+<section id="normal-distribution-example-1" class="slide level2">
+<h2>Normal Distribution Example</h2>
+<p>Intelligence Quotient (IQ) scores are defined to follow a Normal distribution with a mean of 100 and a standard deviation of 15. Use this information to answer the following questions:</p>
+<ol start="4" type="1">
+<li class="fragment">What IQ score is greater than 40% of people?</li>
+<li class="fragment">What IQ score is less that the top 15% of people</li>
+<li class="fragment">What IQ scores are the bounds of the middle 95% of people?</li>
+</ol>
+</section>
 <section id="skewness-and-kurtosis" class="slide level2">
 <h2>Skewness and Kurtosis</h2>
 <p>For a random variable <span class="math inline">\(X\)</span> with PDF <span class="math inline">\(F_X(x)\)</span>, define the following central moments as: <span class="math display">\[\begin{gather*}
@@ -1167,6 +1185,23 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
 <div class="fragment">
 <p>The <span class="definition">quantile function</span> is the inverse of the CDF. These are hard to compute for most distributions, so we tend to use R.</p>
 </div>
+</section>
+<section id="percentile-example" class="slide level2">
+<h2>Percentile Example</h2>
+<p>A train arrives to the station between 0 and 15 minutes late, distributed uniformly:</p>
+<ol type="1">
+<li>What is the median arrival time after it was scheduled?</li>
+</ol>
+<ol start="2" type="1">
+<li class="fragment">What is the 35<sup>th</sup> percentile of the amount of time the train will be late?</li>
+</ol>
+</section>
+<section id="normal-distribution-example-2" class="slide level2">
+<h2>Normal Distribution Example</h2>
+<p>Intelligence Quotient (IQ) scores are defined to follow a Normal distribution with a mean of 100 and a standard deviation of 15. Use this information to answer the following questions:</p>
+<ol start="7" type="1">
+<li>Mensa International famously only allows people who score at the 98th percentile or higher on a standardised, supervised IQ to join. What IQ score must you have to join Mensa?</li>
+</ol>
 
 </section>
     </div>
