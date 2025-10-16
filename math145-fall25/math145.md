@@ -22,3 +22,5 @@ layout: default
 - [Lecture #11: Tangent Line Approximation & Newton’s Method](./math145-lectures/Lecture11.html) ([PDF Version](./math145-lectures/Lecture11.pdf)).
 - [Lecture #12: The Chain Rule](./math145-lectures/Lecture12.html) ([PDF Version](./math145-lectures/Lecture12.pdf)).
 - [Lecture #13: Implicit Differentiation](./math145-lectures/Lecture13.html) ([PDF Version](./math145-lectures/Lecture13.pdf)).
+- [Lecture #14: Exponential Functions and Their Derivatives](./math145-lectures/Lecture14.html) ([PDF Version](./math145-lectures/Lecture14.pdf)).
+- [Lecture #15: Logarithms: Properties, Applications & Derivatives](./math145-lectures/Lecture15.html) ([PDF Version](./math145-lectures/Lecture15.pdf)).
