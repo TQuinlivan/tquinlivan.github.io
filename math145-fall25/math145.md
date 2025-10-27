@@ -24,3 +24,4 @@ layout: default
 - [Lecture #13: Implicit Differentiation](./math145-lectures/Lecture13.html) ([PDF Version](./math145-lectures/Lecture13.pdf)).
 - [Lecture #14: Exponential Functions and Their Derivatives](./math145-lectures/Lecture14.html) ([PDF Version](./math145-lectures/Lecture14.pdf)).
 - [Lecture #15: Logarithms: Properties, Applications & Derivatives](./math145-lectures/Lecture15.html) ([PDF Version](./math145-lectures/Lecture15.pdf)).
+- [Lecture #16: Trigonometric Functions and their Derivatives](./math145-lectures/Lecture16.html) ([PDF Version](./math145-lectures/Lecture16.pdf)).
