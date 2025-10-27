@@ -25,3 +25,5 @@ layout: default
 - [Lecture #14: Exponential Functions and Their Derivatives](./math145-lectures/Lecture14.html) ([PDF Version](./math145-lectures/Lecture14.pdf)).
 - [Lecture #15: Logarithms: Properties, Applications & Derivatives](./math145-lectures/Lecture15.html) ([PDF Version](./math145-lectures/Lecture15.pdf)).
 - [Lecture #16: Trigonometric Functions and their Derivatives](./math145-lectures/Lecture16.html) ([PDF Version](./math145-lectures/Lecture16.pdf)).
+- [Lecture #17: Inverse Functions & More Logarithmic Derivatives](./math145-lectures/Lecture17.html) ([PDF Version](./math145-lectures/Lecture17.pdf)).
+- [Lecture #18: Extrema and Graphs of Functions](./math145-lectures/Lecture18.html) ([PDF Version](./math145-lectures/Lecture18.pdf)).
