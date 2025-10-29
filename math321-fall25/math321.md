@@ -17,3 +17,4 @@ layout: default
 - [Lecture #6: Continuous Probability Distributions](./math321-lectures/Lecture6.html) ([PDF Version](./math321-lectures/Lecture6.pdf)).
 - [Lecture #7: The Normal Distribution](./math321-lectures/Lecture7.html) ([PDF Version](./math321-lectures/Lecture7.pdf)).
 - [Lecture #8: Joint Distributions & Covariance](./math321-lectures/Lecture8.html) ([PDF Version](./math321-lectures/Lecture8.pdf)).
+- [Lecture #9: Moment-Generating Functions](./math321-lectures/Lecture9.html) ([PDF Version](./math321-lectures/Lecture9.pdf)).
