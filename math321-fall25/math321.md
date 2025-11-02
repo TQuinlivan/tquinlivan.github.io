@@ -19,4 +19,4 @@ layout: default
 - [Lecture #8: Joint Distributions & Covariance](./math321-lectures/Lecture8.html) ([PDF Version](./math321-lectures/Lecture8.pdf)).
 - [Lecture #9: Moment-Generating Functions](./math321-lectures/Lecture9.html) ([PDF Version](./math321-lectures/Lecture9.pdf)). 
 - [Lecture #10: Inequalities, Convergence and the Central Limit Theorem](./math321-lectures/Lecture10.html) ([PDF Version](./math321-lectures/Lecture10.pdf)).
-- [Lecture #11: The Likelihood Function & Maximum-Likelihood Functions](./math321-lectures/Lecture11.html) ([PDF Version](./math321-lectures/Lecture11.pdf)).
+- [Lecture #11: The Likelihood Function & Maximum-Likelihood Estimators](./math321-lectures/Lecture11.html) ([PDF Version](./math321-lectures/Lecture11.pdf)).
