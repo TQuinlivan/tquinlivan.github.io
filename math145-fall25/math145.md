@@ -28,3 +28,4 @@ layout: default
 - [Lecture #17: Inverse Functions & More Logarithmic Derivatives](./math145-lectures/Lecture17.html) ([PDF Version](./math145-lectures/Lecture17.pdf)).
 - [Lecture #18: Extrema and Graphs of Functions](./math145-lectures/Lecture18.html) ([PDF Version](./math145-lectures/Lecture18.pdf)).
 - [Lecture #19: Optimization and Applications](./math145-lectures/Lecture19.html) ([PDF Version](./math145-lectures/Lecture19.pdf)).
+- [Lecture #20: Optimization of Multivariable Functions](./math145-lectures/Lecture20.html) ([PDF Version](./math145-lectures/Lecture20.pdf)).
