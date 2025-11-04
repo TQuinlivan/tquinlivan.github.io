@@ -20,3 +20,4 @@ layout: default
 - [Lecture #9: Moment-Generating Functions](./math321-lectures/Lecture9.html) ([PDF Version](./math321-lectures/Lecture9.pdf)). 
 - [Lecture #10: Inequalities, Convergence and the Central Limit Theorem](./math321-lectures/Lecture10.html) ([PDF Version](./math321-lectures/Lecture10.pdf)).
 - [Lecture #11: The Likelihood Function & Maximum-Likelihood Estimators](./math321-lectures/Lecture11.html) ([PDF Version](./math321-lectures/Lecture11.pdf)).
+- [Lecture #12: Introduction to Bayesian Statistics](./math321-lectures/Lecture12.html) ([PDF Version](./math321-lectures/Lecture12.pdf)).
