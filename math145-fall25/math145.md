@@ -30,3 +30,7 @@ layout: default
 - [Lecture #19: Optimization and Applications](./math145-lectures/Lecture19.html) ([PDF Version](./math145-lectures/Lecture19.pdf)).
 - [Lecture #20: Optimization of Multivariable Functions](./math145-lectures/Lecture20.html) ([PDF Version](./math145-lectures/Lecture20.pdf)).
 - [Lecture #21: Antiderivatives & Differential Equations](./math145-lectures/Lecture21.html) ([PDF Version](./math145-lectures/Lecture21.pdf)).
+- [Lecture #22: Riemann Sums & Definite Integrals](./math145-lectures/Lecture22.html) ([PDF Version](./math145-lectures/Lecture22.pdf)).
+- [Lecture #23: The Fundamental Theorem of Calculus](./math145-lectures/Lecture23.html) ([PDF Version](./math145-lectures/Lecture23.pdf)).
+- [Lecture #24: Integration by Substitution](./math145-lectures/Lecture24.html) ([PDF Version](./math145-lectures/Lecture24.pdf)).
+- [Lecture #25: Double and Iterated Integrals](./math145-lectures/Lecture25.html) ([PDF Version](./math145-lectures/Lecture25.pdf)).
