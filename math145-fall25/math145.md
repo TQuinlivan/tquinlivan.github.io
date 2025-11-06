@@ -29,3 +29,4 @@ layout: default
 - [Lecture #18: Extrema and Graphs of Functions](./math145-lectures/Lecture18.html) ([PDF Version](./math145-lectures/Lecture18.pdf)).
 - [Lecture #19: Optimization and Applications](./math145-lectures/Lecture19.html) ([PDF Version](./math145-lectures/Lecture19.pdf)).
 - [Lecture #20: Optimization of Multivariable Functions](./math145-lectures/Lecture20.html) ([PDF Version](./math145-lectures/Lecture20.pdf)).
+- [Lecture #21: Antiderivatives & Differential Equations](./math145-lectures/Lecture21.html) ([PDF Version](./math145-lectures/Lecture21.pdf)).
