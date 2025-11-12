@@ -22,3 +22,4 @@ layout: default
 - [Lecture #11: The Likelihood Function & Maximum-Likelihood Estimators](./math321-lectures/Lecture11.html) ([PDF Version](./math321-lectures/Lecture11.pdf)).
 - [Lecture #12: Introduction to Bayesian Statistics](./math321-lectures/Lecture12.html) ([PDF Version](./math321-lectures/Lecture12.pdf)).
 - [Lecture #13: The Bivariate and Multivariate Normal Distributions](./math321-lectures/Lecture13.html) ([PDF Version](./math321-lectures/Lecture13.pdf)).
+- [Lecture #14: Change of Variables](./math321-lectures/Lecture14.html) ([PDF Version](./math321-lectures/Lecture14.pdf)).
