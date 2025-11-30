@@ -14,3 +14,4 @@ Here you can find my lecture notes and other materials.
 ## Winter 2026
 
 - [MATH 146 - Calculus II (Winter 2026)](./math146-winter26/math146.md) 
+- [STAT 200 - Introductory Statistics (Winter 2026)](./stat200-winter26/stat200.md) 
