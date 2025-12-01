@@ -11,4 +11,4 @@ layout: default
 
 ## Lecture Slides
 
-- [Lecture #1: Test](./stat200-lectures/Lecture1.html) ([PDF Version](./stat200-lectures/Lecture1.pdf)).
+- [Lecture #1: An Introduction to Statistics](./stat200-lectures/Lecture1.html) ([PDF Version](./stat200-lectures/Lecture1.pdf)).
