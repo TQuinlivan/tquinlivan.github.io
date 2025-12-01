@@ -2,12 +2,14 @@
 layout: default
 ---
 
-# Course Information
+# MATH 145 - Calculus I (Fall 2025)
+
+## Course Information
 
 - [Syllabus](./math145-syllabus.pdf)
 - [Tentative Schedule](./math145-schedule.pdf)
 
-# Lecture Slides
+## Lecture Slides
 
 - [Lecture #1: Models and Functions; Rates of Change](./math145-lectures/Lecture1.html) ([PDF Version](./math145-lectures/Lecture1.pdf)).
 - [Lecture #2: Linear Functions, Quadratic Functions, Compositions](./math145-lectures/Lecture2.html) ([PDF Version](./math145-lectures/Lecture2.pdf)).
