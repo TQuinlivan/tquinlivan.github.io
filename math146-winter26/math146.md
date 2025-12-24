@@ -14,3 +14,6 @@ layout: default
 - [Lecture #1: Calculus I Review](./math146-lectures/Lecture1.html) ([PDF Version](./math146-lectures/Lecture1.pdf)).
 - [Lecture #2: Review: Riemann Sums, Definite Integrals & the Fundamental Theorem of Calculus](./math146-lectures/Lecture2.html) ([PDF Version](./math146-lectures/Lecture2.pdf)).
 - [Lecture #3: Integration by Substitution & Integration by Parts](./math146-lectures/Lecture3.html) ([PDF Version](./math146-lectures/Lecture3.pdf)).
+- [Lecture #4: Applications of the Integral: Areas & Arc Lengths](./math146-lectures/Lecture4.html) ([PDF Version](./math146-lectures/Lecture4.pdf)).
+- [Lecture #5: Centers of Mass & Volumes of Revolution](./math146-lectures/Lecture5.html) ([PDF Version](./math146-lectures/Lecture5.pdf)).
+- [Lecture #6: Surfaces of Revolution](./math146-lectures/Lecture6.html) ([PDF Version](./math146-lectures/Lecture6.pdf)).
