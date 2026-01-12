@@ -17,3 +17,4 @@ layout: default
 - [Lecture #4: What Not to Do: Types and Sources of Bias](./stat200-lectures/Lecture4.html) ([PDF Version](./stat200-lectures/Lecture4.pdf)).
 - [Lecture #5: Graphics for Categorical Variables](./stat200-lectures/Lecture5.html) ([PDF Version](./stat200-lectures/Lecture5.pdf)).
 - [Lecture #6: Graphics for Numeric Variables](./stat200-lectures/Lecture6.html) ([PDF Version](./stat200-lectures/Lecture6.pdf)).
+- [Lecture #7: Measures of Center and of Position](./stat200-lectures/Lecture7.html) ([PDF Version](./stat200-lectures/Lecture7.pdf)).
