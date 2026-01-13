@@ -18,3 +18,5 @@ layout: default
 - [Lecture #5: Graphics for Categorical Variables](./stat200-lectures/Lecture5.html) ([PDF Version](./stat200-lectures/Lecture5.pdf)).
 - [Lecture #6: Graphics for Numeric Variables](./stat200-lectures/Lecture6.html) ([PDF Version](./stat200-lectures/Lecture6.pdf)).
 - [Lecture #7: Measures of Center and of Position](./stat200-lectures/Lecture7.html) ([PDF Version](./stat200-lectures/Lecture7.pdf)).
+- [Lecture #8: Measures of Spread](./stat200-lectures/Lecture8.html) ([PDF Version](./stat200-lectures/Lecture8.pdf)).
+- [Lecture #9: Correlation & Linear Regression](./stat200-lectures/Lecture9.html) ([PDF Version](./stat200-lectures/Lecture9.pdf)).
