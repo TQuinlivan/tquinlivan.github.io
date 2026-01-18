@@ -29,7 +29,7 @@ layout: default
 - Lecture #16: Taylor Series and Applications ([PDF Version](./math146-lectures/Lecture16.pdf)).
 - Lecture #17: Seperable Differential Equations ([PDF Version](./math146-lectures/Lecture17.pdf)).
 - Lecture #18: First-Order Linear Equations ([PDF Version](./math146-lectures/Lecture18.pdf)).
-    - Applications of First-Order Linear Equations ([PDF Version](./math146-lectures/Lecture18-apps.pdf)).
+- Lecture #18.5: Applications of First-Order Linear Equations ([PDF Version](./math146-lectures/Lecture18-apps.pdf)).
 - Lecture #19: Series Solutions to Differential Equations ([PDF Version](./math146-lectures/Lecture19.pdf)).
 - Lecture #20: Parametric Equations ([PDF Version](./math146-lectures/Lecture20.pdf)).
 - Lecture #21: Polar Coordinates ([PDF Version](./math146-lectures/Lecture21.pdf)).
