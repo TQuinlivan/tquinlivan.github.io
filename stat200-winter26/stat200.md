@@ -20,3 +20,4 @@ layout: default
 - [Lecture #7: Measures of Center and of Position](./stat200-lectures/Lecture7.html) ([PDF Version](./stat200-lectures/Lecture7.pdf)).
 - [Lecture #8: Measures of Spread](./stat200-lectures/Lecture8.html) ([PDF Version](./stat200-lectures/Lecture8.pdf)).
 - [Lecture #9: Correlation & Linear Regression](./stat200-lectures/Lecture9.html) ([PDF Version](./stat200-lectures/Lecture9.pdf)).
+- [Lecture #10: The Basics of Probability](./stat200-lectures/Lecture10.html) ([PDF Version](./stat200-lectures/Lecture10.pdf)).
