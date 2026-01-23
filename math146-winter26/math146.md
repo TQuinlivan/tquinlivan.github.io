@@ -8,6 +8,8 @@ layout: default
 
 - [Syllabus](./math146-syllabus.pdf)
 - [Tentative Schedule](./math146-schedule.pdf)
+- [Trig Cheat Sheet](./math146-trig-cheat-sheet.pdf)
+- [Series Cheat Sheet](./math146-series-cheat-sheet.pdf)
 
 ## Lecture Slides
 
