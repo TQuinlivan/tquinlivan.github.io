@@ -23,3 +23,6 @@ layout: default
 - [Lecture #10: The Basics of Probability](./stat200-lectures/Lecture10.html) ([PDF Version](./stat200-lectures/Lecture10.pdf)).
 - [Lecture #11: Discrete Random Variables](./stat200-lectures/Lecture11.html) ([PDF Version](./stat200-lectures/Lecture11.pdf)).
 - [Lecture #12: The Bernoulli, Binomial and Poisson Distributions](./stat200-lectures/Lecture12.html) ([PDF Version](./stat200-lectures/Lecture12.pdf)).
+- [Lecture #13: Continuous Distribution & the Normal Distribution](./stat200-lectures/Lecture13.html) ([PDF Version](./stat200-lectures/Lecture13.pdf)).
+- [Lecture #14: The Normal Approximation of the Binomial Distribution](./stat200-lectures/Lecture14.html) ([PDF Version](./stat200-lectures/Lecture14.pdf)).
+
