@@ -442,7 +442,7 @@
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Torin Quinlivan">
-  <meta name="dcterms.date" content="2026-01-19">
+  <meta name="dcterms.date" content="2026-01-27">
   <title>Lecture #10: The Basics of Probability</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1021,16 +1021,7 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
     </div>
 </div>
 
-  <p class="date">January 19, 2026</p>
-</section>
-<section id="todays-objective" class="slide level2">
-<h2>Today’s Objective</h2>
-<p>After today’s lecture, you should:</p>
-<ul>
-<li>Understand the theory behind testing the relationship between two numeric variables.</li>
-<li>Estimate a value of the dependent variable (and provide a confidence interval).</li>
-<li>Predict a value of the dependent variable (and provide a prediction interval).</li>
-</ul>
+  <p class="date">January 27, 2026</p>
 </section>
 <section id="probability" class="slide level2">
 <h2>Probability</h2>
@@ -1237,13 +1228,21 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
 \mathbb{P}(A \textrm{ and ) B} = \mathbb{P}(A \cap B) = \mathbb{P}(A \mid B) \times \mathbb{P}(B) = \mathbb{P}(B \mid A) \times \mathbb{P}(A)
 \]</span></p>
 </section>
+<section id="example" class="slide level2">
+<h2>Example</h2>
+<p>Suppose <span class="math inline">\(C\)</span> and <span class="math inline">\(D\)</span> are events such that <span class="math inline">\(\mathbb{P}(C) =0.50\)</span>, <span class="math inline">\(\mathbb{P}(D) = 0.30\)</span> and <span class="math inline">\(\mathbb{P}(C \mid D) = 0.40\)</span>.</p>
+<ol type="1">
+<li class="fragment">Find <span class="math inline">\(\mathbb{P}(C \text{ and } D)\)</span>.</li>
+<li class="fragment">Find <span class="math inline">\(\mathbb{P}(D \mid C)\)</span>.</li>
+</ol>
+</section>
 <section id="bayes-theorem" class="slide level2">
 <h2>Bayes’ Theorem</h2>
 <p>Combining these definitions give us a very important result, Bayes’ Theorem.</p>
 <div class="fragment">
 <p>Let <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> be events. The conditional probability of <span class="math inline">\(A\)</span> given <span class="math inline">\(B\)</span> can be expressed as:</p>
 <p><span class="math display">\[
-\mathbb{P}(B \mid A) = \frac{\mathbb{P}(A \mid B) \mathbb{P}(B)}{\mathbb{P}(A)}
+\mathbb{P}(B \mid A) = \frac{\mathbb{P}(A \mid B) \times \mathbb{P}(B)}{\mathbb{P}(A)}
 \]</span></p>
 </div>
 </section>
@@ -1251,7 +1250,7 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
 <h2>Bayes’ Theorem</h2>
 <p>We can also write this as (by using the <strong>Law of Total Probability</strong>):</p>
 <p><span class="math display">\[
-\mathbb{P}(B \mid A) = \frac{\mathbb{P}(A \mid B) \mathbb{P}(B)}{\mathbb{P}(A \mid B) \mathbb{P}(B) + \mathbb{P}(A \mid B^C) \mathbb{P}(B^C)}
+\mathbb{P}(B \mid A) = \frac{\mathbb{P}(A \mid B) \times \mathbb{P}(B)}{\mathbb{P}(A \mid B) \times \mathbb{P}(B) + \mathbb{P}(A \mid B^C) \times \mathbb{P}(B^C)}
 \]</span></p>
 <div class="fragment">
 <p>This can be extended to any <em>partition</em> of the sample space, no matter how many subsets are in the partition.</p>
