@@ -27,3 +27,4 @@ layout: default
 - [Lecture #14: The Normal Approximation of the Binomial Distribution](./stat200-lectures/Lecture14.html) ([PDF Version](./stat200-lectures/Lecture14.pdf)).
 - [Lecture #15: The Central Limit Theorem](./stat200-lectures/Lecture15.html) ([PDF Version](./stat200-lectures/Lecture15.pdf)).
 - [Lecture #16: The Theory of Confidence Intervals](./stat200-lectures/Lecture16.html) ([PDF Version](./stat200-lectures/Lecture16.pdf)).
+- [Lecture #17: The Practice of Confidence Intervals](./stat200-lectures/Lecture17.html) ([PDF Version](./stat200-lectures/Lecture17.pdf)).
