@@ -25,4 +25,4 @@ layout: default
 - [Lecture #12: The Bernoulli, Binomial and Poisson Distributions](./stat200-lectures/Lecture12.html) ([PDF Version](./stat200-lectures/Lecture12.pdf)).
 - [Lecture #13: Continuous Distribution & the Normal Distribution](./stat200-lectures/Lecture13.html) ([PDF Version](./stat200-lectures/Lecture13.pdf)).
 - [Lecture #14: The Normal Approximation of the Binomial Distribution](./stat200-lectures/Lecture14.html) ([PDF Version](./stat200-lectures/Lecture14.pdf)).
-
+- [Lecture #15: The Central Limit Theorem](./stat200-lectures/Lecture15.html) ([PDF Version](./stat200-lectures/Lecture15.pdf)).
