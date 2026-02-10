@@ -28,3 +28,5 @@ layout: default
 - [Lecture #15: The Central Limit Theorem](./stat200-lectures/Lecture15.html) ([PDF Version](./stat200-lectures/Lecture15.pdf)).
 - [Lecture #16: The Theory of Confidence Intervals](./stat200-lectures/Lecture16.html) ([PDF Version](./stat200-lectures/Lecture16.pdf)).
 - [Lecture #17: The Practice of Confidence Intervals](./stat200-lectures/Lecture17.html) ([PDF Version](./stat200-lectures/Lecture17.pdf)).
+- [Lecture #18: The Theory of Hypothesis Tests](./stat200-lectures/Lecture18.html) ([PDF Version](./stat200-lectures/Lecture18.pdf)).
+- [Lecture #19: The Practice of Hypothesis Tests](./stat200-lectures/Lecture19.html) ([PDF Version](./stat200-lectures/Lecture19.pdf)).
