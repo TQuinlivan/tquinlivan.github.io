@@ -30,3 +30,5 @@ layout: default
 - [Lecture #17: The Practice of Confidence Intervals](./stat200-lectures/Lecture17.html) ([PDF Version](./stat200-lectures/Lecture17.pdf)).
 - [Lecture #18: The Theory of Hypothesis Tests](./stat200-lectures/Lecture18.html) ([PDF Version](./stat200-lectures/Lecture18.pdf)).
 - [Lecture #19: The Practice of Hypothesis Tests](./stat200-lectures/Lecture19.html) ([PDF Version](./stat200-lectures/Lecture19.pdf)).
+- [Lecture #20: Chi-Square Goodness-of-Fit Test](./stat200-lectures/Lecture20.html) ([PDF Version](./stat200-lectures/Lecture20.pdf)).
+- [Lecture #21: The Analysis of Variance (ANOVA)](./stat200-lectures/Lecture21.html) ([PDF Version](./stat200-lectures/Lecture21.pdf)).
