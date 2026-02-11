@@ -442,7 +442,7 @@
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Torin Quinlivan">
-  <meta name="dcterms.date" content="2026-02-10">
+  <meta name="dcterms.date" content="2026-02-11">
   <title>Lecture #19: The Practice of Hypothesis Testing &amp; p-values</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1087,7 +1087,7 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
     </div>
 </div>
 
-  <p class="date">February 10, 2026</p>
+  <p class="date">February 11, 2026</p>
 </section>
 <section id="the-theory-behind-hypothesis-testing" class="slide level2">
 <h2>The Theory Behind Hypothesis Testing</h2>
@@ -1209,7 +1209,7 @@ H_R : \mu = 4
 <span id="cb1-14"><a href></a><span class="co"># Analysis Calculations </span></span>
 <span id="cb1-15"><a href></a><span class="dv">2</span><span class="sc">*</span><span class="fu">mean</span>(ts <span class="sc">&gt;</span> <span class="dv">4</span>)                          <span class="do">## p-value </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 6e-04</code></pre>
+<pre><code>[1] 2e-04</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href></a><span class="fu">quantile</span>(ts, <span class="fu">c</span>(<span class="fl">0.025</span>, <span class="fl">0.975</span>))           <span class="do">## Confidence Interval </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -1753,6 +1753,9 @@ difference in location
 <span id="cb31-2"><a href></a><span class="fu">install.packages</span>(<span class="st">&quot;quantmod&quot;</span>)    <span class="do">## Only once per computer </span></span>
 <span id="cb31-3"><a href></a><span class="fu">library</span>(quantmod)               <span class="do">## Each time you use it </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
+<section id="example-6-risky-business-2" class="slide level2">
+<h2>Example #6: Risky Business</h2>
 <p>It is a new package, so working your way around it is slow at first. However, the following lines will download the IBM and Apple data from Yahoo Finance from Jan 3, 2007, until Aug 12, 2022, and store them in two variables.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href></a><span class="fu">library</span>(quantmod)</span>
@@ -1769,7 +1772,7 @@ difference in location
 <div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href></a>stock2 <span class="ot">=</span> <span class="fu">as.numeric</span>(AAPL<span class="sc">$</span>AAPL.Close)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="example-6-risky-business-2" class="slide level2">
+<section id="example-6-risky-business-3" class="slide level2">
 <h2>Example #6: Risky Business</h2>
 <p>Next, we have to adjust the prices so that they have the same average. This is done because risk is defined in terms of a set portfolio value of $1. The adjustment also allows us to interpret the changes in values as percent changes.</p>
 <div class="cell">
@@ -1777,7 +1780,7 @@ difference in location
 <span id="cb37-2"><a href></a>stock2 <span class="ot">=</span> stock2 <span class="sc">/</span> <span class="fu">mean</span>(stock2) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="example-6-risky-business-3" class="slide level2">
+<section id="example-6-risky-business-4" class="slide level2">
 <h2>Example #6: Risky Business</h2>
 <p>Now, we just compare the two variances.</p>
 <div class="cell">
@@ -1787,17 +1790,17 @@ difference in location
     F test to compare two variances
 
 data:  stock1 and stock2
-F = 0.065995, num df = 4805, denom df = 4805, p-value &lt; 2.2e-16
+F = 0.066105, num df = 4806, denom df = 4806, p-value &lt; 2.2e-16
 alternative hypothesis: true ratio of variances is not equal to 1
 95 percent confidence interval:
- 0.06236592 0.06983477
+ 0.06247002 0.06995051
 sample estimates:
 ratio of variances 
-        0.06599477 </code></pre>
+        0.06610454 </code></pre>
 </div>
 </div>
 </section>
-<section id="example-6-risky-business-4" class="slide level2">
+<section id="example-6-risky-business-5" class="slide level2">
 <h2>Example #6: Risky Business</h2>
 <p><strong>Conclusion:</strong></p>
 <p>We are asked to determine which of two stocks, IBM and Apple (AAPL), is more risky. To do this, we will use the F test.</p>
@@ -1830,10 +1833,13 @@ ratio of variances
  0.34  0.62 </code></pre>
 </div>
 </div>
+</section>
+<section id="example-7-knox-students-3" class="slide level2">
+<h2>Example #7: Knox Students</h2>
 <p>The <span class="math inline">\(p\)</span>-value from the simulation test is much, much less than our usual alpha-value of <span class="math inline">\(\alpha = 0.05\)</span>. As such, we conclude that the rate of a positive AAS assessment for males at Knox College is larger than the national average.</p>
 <p>We are <span class="math inline">\(95\%\)</span> confident that the proportion of males at Knox who test positive on AAS are from 34% to 62%.</p>
 </section>
-<section id="example-7-knox-students-3" class="slide level2">
+<section id="example-7-knox-students-4" class="slide level2">
 <h2>Example #7: Knox Students</h2>
 <p>The second hypothesis is that the female proportion testing positive on the AAS is 5.1%.</p>
 <div class="cell">
@@ -1849,10 +1855,13 @@ ratio of variances
  0.24  0.72 </code></pre>
 </div>
 </div>
+</section>
+<section id="example-7-knox-students-5" class="slide level2">
+<h2>Example #7: Knox Students</h2>
 <p>The <span class="math inline">\(p\)</span>-value from the simulation test (0.001325) is less than our usual alpha-value of <span class="math inline">\(\alpha = 0.05\)</span>. As such, we conclude that the rate of a positive AAS assessment for females at Knox College is larger than the national average.</p>
 <p>We are <span class="math inline">\(95\%\)</span> confident that the proportion of females at Knox who test positive on AAS are from 8% to 40%. The accepted proportion of 5.1% is not in this interval.</p>
 </section>
-<section id="example-7-knox-students-4" class="slide level2">
+<section id="example-7-knox-students-6" class="slide level2">
 <h2>Example #7: Knox Students</h2>
 <p>Alternatively, you can use the built-in Binomial test:</p>
 <div class="cell">
@@ -1872,7 +1881,7 @@ probability of success
 </div>
 </div>
 </section>
-<section id="example-7-knox-students-5" class="slide level2">
+<section id="example-7-knox-students-7" class="slide level2">
 <h2>Example #7: Knox Students</h2>
 <p>Alternatively, you can use the built-in Binomial test:</p>
 <div class="cell">
@@ -1892,18 +1901,18 @@ probability of success
 </div>
 </div>
 </section>
-<section id="example-7-knox-students-6" class="slide level2">
+<section id="example-7-knox-students-8" class="slide level2">
 <h2>Example #7: Knox Students</h2>
 <p>These lines provide the same substantive results, although the confidence intervals will be slightly diﬀerent:</p>
 <p>We are <span class="math inline">\(95\%\)</span> confident that the proportion of males at Knox College who are AAS-positive is between 33.7% and 62.6%; of females, between 9.4% and 45.1%.</p>
 </section>
-<section id="example-7-knox-students-7" class="slide level2">
+<section id="example-7-knox-students-9" class="slide level2">
 <h2>Example #7: Knox Students</h2>
 <p>The third embedded hypothesis is that males are twice as likely as females to be AAS-positive.</p>
 <p>One way of testing this is simply to double the female successes in the sample and/or doubling the female success rate in the population. This is not the “optimal” method, but it usually does a sufficient job. A second method is to halve the number of “successes” in the male-identifying population.</p>
 <p>What I tend to do is both of these. If the two methods tell the same story, then I am confident in my conclusion. If, on the other hand, they give contradicting results, then I report both test results and conclude that, if there is a detected effect, then it is quite minor.</p>
 </section>
-<section id="example-7-knox-students-8" class="slide level2">
+<section id="example-7-knox-students-10" class="slide level2">
 <h2>Example #7: Knox Students</h2>
 <p>Here is the code and the output from the first method.</p>
 <div class="cell">
@@ -1924,13 +1933,13 @@ prop 1 prop 2
 </div>
 <p>I leave it as an exercise to show that the second method gives similar results.</p>
 </section>
-<section id="example-7-knox-students-9" class="slide level2">
+<section id="example-7-knox-students-11" class="slide level2">
 <h2>Example #7: Knox Students</h2>
 <p><strong>Conclusion:</strong></p>
 <p>According to SAMHSA, the proportion of males who test positive on the AAS assessment is about double that of females. The male proportion is 10.5%; the female, 5.1%.</p>
 <p>For Knox College, the proportion of males testing positive on the AAS Assessment is significantly higher, from 34% to 62%. Similarly, the proportion of females testing positive is also significantly higher, from 8% to 40%.</p>
 </section>
-<section id="example-7-knox-students-10" class="slide level2">
+<section id="example-7-knox-students-12" class="slide level2">
 <h2>Example #7: Knox Students</h2>
 <p>The SAMHSA noted that the proportion of males testing positive is about twice the proportion that females tested positive. In this, Knox College students seem to be typical. There is no evidence that the ratio is anything other than what SAMHSA found in the population at large.</p>
 <p>All of this suggests that the relationship between male and female problematic drinking holds at Knox College, even if the actual rates of AAS-positive findings are higher.</p>
