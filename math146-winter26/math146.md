@@ -37,3 +37,4 @@ layout: default
 - Lecture #21: Polar Coordinates ([PDF Version](./math146-lectures/Lecture21.pdf)).
 - Lecture #22: Calculus with Polar Coordinates ([PDF Version](./math146-lectures/Lecture22.pdf)).
 - Lecture #23: Numerical Integration ([PDF Version](./math146-lectures/Lecture23.pdf)).
+- Lecture #24: Slope Fields & Euler's Method ([PDF Version](./math146-lectures/Lecture24.pdf)).

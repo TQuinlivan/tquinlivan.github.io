@@ -442,7 +442,7 @@
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Torin Quinlivan">
-  <meta name="dcterms.date" content="2026-02-07">
+  <meta name="dcterms.date" content="2026-02-18">
   <title>Lecture #17: The Practice of Confidence Intervals</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1087,7 +1087,7 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
     </div>
 </div>
 
-  <p class="date">February 7, 2026</p>
+  <p class="date">February 18, 2026</p>
 </section>
 <section id="one-parameter-procedures-mu" class="slide level2">
 <h2>One-Parameter Procedures: <span class="math inline">\(\mu\)</span></h2>
@@ -1206,15 +1206,15 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
 <h2>Two-Parameter Procedures: <span class="math inline">\(\mu_1 - \mu_2\)</span> (Independent)</h2>
 <p>Parametric Procedure: two-sample <span class="math inline">\(t\)</span>-procedure</p>
 <ul>
-<li>Graphic: side-by-side box-and-whiskers plot (<code>boxplot(x $\sim$ g)</code> or <code>boxplot(x1, x2)</code>)</li>
+<li>Graphic: side-by-side box-and-whiskers plot (<code>boxplot(x ~ g)</code> or <code>boxplot(x1, x2)</code>)</li>
 <li>Requires: Data generated from Normal distribution – in <em>each</em> population
 <ul>
 <li>Requirement test: Shapiro-Wilk test
 <ul>
-<li><code>R</code> function: <code>shapiroTest(x $\sim$ g)</code></li>
+<li><code>R</code> function: <code>shapiroTest(x ~ g)</code></li>
 </ul></li>
 </ul></li>
-<li><code>R</code> function: <code>t.test(x $\sim$ g)</code></li>
+<li><code>R</code> function: <code>t.test(x ~ g)</code></li>
 <li><code>R</code> function: <code>t.test(x1, x2)</code></li>
 </ul>
 <p><strong>Note:</strong> This is not the same test as Hawkes uses.</p>
@@ -1223,9 +1223,9 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
 <h2>Two-Parameter Procedures: <span class="math inline">\(\mu_1 - \mu_2\)</span> (Independent)</h2>
 <p>Non-Parametric Procedure: Mann-Whitney procedure</p>
 <ul>
-<li>Graphic: side-by-side box-and-whiskers plot (<code>boxplot(x $\sim$ g)</code> or <code>boxplot(x1, x2)</code>)</li>
+<li>Graphic: side-by-side box-and-whiskers plot (<code>boxplot(x ~ g)</code> or <code>boxplot(x1, x2)</code>)</li>
 <li>Requires: Beyond the scope of this course</li>
-<li><code>R</code> function: <code>wilcox.test(x $\sim$ g, conf.int=TRUE)</code></li>
+<li><code>R</code> function: <code>wilcox.test(x ~ g, conf.int=TRUE)</code></li>
 <li><code>R</code> function: <code>wilcox.test(x1, x2, conf.int=TRUE)</code></li>
 </ul>
 </section>
@@ -1252,15 +1252,15 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
 <h2>Two-Parameter Procedures: <span class="math inline">\(\frac{\sigma_1^2}{\sigma_2^2}\)</span></h2>
 <p>Parametric Procedure: Fisher’s <span class="math inline">\(F\)</span>-test</p>
 <ul>
-<li>Graphic: side-by-side box-and-whiskers plot (<code>boxplot(x $\sim$ g)</code> or <code>boxplot(x1, x2)</code>)</li>
+<li>Graphic: side-by-side box-and-whiskers plot (<code>boxplot(x ~ g)</code> or <code>boxplot(x1, x2)</code>)</li>
 <li>Requires: Data generated from Normal distribution – in <em>each</em> population
 <ul>
 <li>Requirement test: Shapiro-Wilk test
 <ul>
-<li><code>R</code> function: <code>shapiroTest(x $\sim$ g)</code></li>
+<li><code>R</code> function: <code>shapiroTest(x ~ g)</code></li>
 </ul></li>
 </ul></li>
-<li><code>R</code> function: <code>var.test(x $\sim$ g)</code></li>
+<li><code>R</code> function: <code>var.test(x ~ g)</code></li>
 <li><code>R</code> function: <code>var.test(x1, x2)</code></li>
 </ul>
 
