@@ -32,3 +32,5 @@ layout: default
 - [Lecture #19: The Practice of Hypothesis Tests](./stat200-lectures/Lecture19.html) ([PDF Version](./stat200-lectures/Lecture19.pdf)).
 - [Lecture #20: Chi-Square Goodness-of-Fit Test](./stat200-lectures/Lecture20.html) ([PDF Version](./stat200-lectures/Lecture20.pdf)).
 - [Lecture #21: The Analysis of Variance (ANOVA)](./stat200-lectures/Lecture21.html) ([PDF Version](./stat200-lectures/Lecture21.pdf)).
+- [Lecture #22: Beyond the ANOVA Procedure](./stat200-lectures/Lecture22.html) ([PDF Version](./stat200-lectures/Lecture22.pdf)).
+- [Lecture #23: Testing Categorical Independence](./stat200-lectures/Lecture23.html) ([PDF Version](./stat200-lectures/Lecture23.pdf)).
