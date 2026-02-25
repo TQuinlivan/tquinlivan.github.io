@@ -34,3 +34,5 @@ layout: default
 - [Lecture #21: The Analysis of Variance (ANOVA)](./stat200-lectures/Lecture21.html) ([PDF Version](./stat200-lectures/Lecture21.pdf)).
 - [Lecture #22: Beyond the ANOVA Procedure](./stat200-lectures/Lecture22.html) ([PDF Version](./stat200-lectures/Lecture22.pdf)).
 - [Lecture #23: Testing Categorical Independence](./stat200-lectures/Lecture23.html) ([PDF Version](./stat200-lectures/Lecture23.pdf)).
+- [Lecture #24: Covariance and Correlation](./stat200-lectures/Lecture24.html) ([PDF Version](./stat200-lectures/Lecture24.pdf)).
+- [Lecture #25: Returning to Regression](./stat200-lectures/Lecture25.html) ([PDF Version](./stat200-lectures/Lecture25.pdf)).
