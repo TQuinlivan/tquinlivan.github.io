@@ -19,4 +19,4 @@ Here you can find my lecture notes and other materials.
 ## Spring 2026
 
 - [STAT 200 - Introductory Statistics (Spring 2026)](./stat200-spring26/stat200.md) 
-- [STAT 223 - Applied Analytics (Spring 2026)](./stat223-winter26/stat223.md) 
+- [STAT 223 - Applied Analytics (Spring 2026)](./stat223-spring26/stat223.md) 
