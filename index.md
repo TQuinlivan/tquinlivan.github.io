@@ -20,3 +20,8 @@ Here you can find my lecture notes and other materials.
 
 - [STAT 200 - Introductory Statistics (Spring 2026)](./stat200-spring26/stat200.md) 
 - [STAT 223 - Applied Analytics (Spring 2026)](./stat223-spring26/stat223.md) 
+
+## Fall 2026
+
+- [STAT 200 - Introductory Statistics (Fall 2026)](./stat200-fall26/stat200.md) 
+- [STAT 321 - Probability Theory (Fall 2026)](./stat321-fall26/stat321.md) 
