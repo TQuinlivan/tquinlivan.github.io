@@ -24,4 +24,4 @@ Here you can find my lecture notes and other materials.
 ## Fall 2026
 
 - [STAT 200 - Introductory Statistics (Fall 2026)](./stat200-fall26/stat200.md) 
-- [STAT 321 - Probability Theory (Fall 2026)](./stat321-fall26/math321.md) 
+- [STAT 321 - Probability Theory (Fall 2026)](./math321-fall26/math321.md) 
