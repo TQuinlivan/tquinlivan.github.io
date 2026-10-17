@@ -442,7 +442,7 @@
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Torin Quinlivan">
-  <meta name="dcterms.date" content="2026-10-01">
+  <meta name="dcterms.date" content="2026-10-17">
   <title>Lecture #5: Discrete Probability Distributions</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1021,7 +1021,7 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
     </div>
 </div>
 
-  <p class="date">October 1, 2026</p>
+  <p class="date">October 17, 2026</p>
 </section>
 <section id="motivating-example" class="slide level2">
 <h2>Motivating Example</h2>
@@ -1098,11 +1098,13 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
 <p>The <span class="definition">binomial distribution</span> is defined as the sum of <span class="math inline">\(n\)</span> independent and identically distributed Bernoulli random variables with success probability <span class="math inline">\(p\)</span>.</p>
 <div class="fragment">
 <p>In formal terms:</p>
-<p><span class="math display">\[\begin{gather*}
+<p><span class="math display">\[
+\begin{gather*}
   X_i \overset{i.i.d.}{\sim} \text{Bernoulli}(p) \\[0.2em]
-  Y = \sum_{i=1}^n X_i \\[0.2em]
-  Y \sim \text{Binomial}(n, p)
-\end{gather*}\]</span></p>
+  X = \sum_{i=1}^n X_i \\[0.2em]
+  X \sim \text{Binomial}(n, p)
+\end{gather*}
+\]</span></p>
 </div>
 <div class="fragment">
 <p>The binomial distribution has <span class="math inline">\(2\)</span> parameters: the <span class="definition">number of trials <span class="math inline">\(n\)</span></span> and the <span class="definition">success probability <span class="math inline">\(p\)</span></span>.</p>
