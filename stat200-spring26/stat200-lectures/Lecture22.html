@@ -442,7 +442,7 @@
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Torin Quinlivan">
-  <meta name="dcterms.date" content="2026-02-21">
+  <meta name="dcterms.date" content="2026-10-27">
   <title>Lecture #22: Beyond the ANOVA Procedure</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1087,7 +1087,7 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
     </div>
 </div>
 
-  <p class="date">February 21, 2026</p>
+  <p class="date">October 27, 2026</p>
 </section>
 <section id="review-procedure-requirements" class="slide level2">
 <h2>Review: Procedure Requirements</h2>
@@ -1312,7 +1312,7 @@ D-C 178.00   42.657301 313.3427 0.0097522</code></pre>
 <p>Like the <span class="math inline">\(t\)</span>-test, there is a non-parametric alternative to ANOVA. It is called the <span class="definition">Kruskal-Wallis test</span>.</p>
 <ul>
 <li>It has the same requirements as the Mann-Whitney test.</li>
-<li>It is a part of the <code>agricolae</code> package, which you have to install.</li>
+<li>It is built into <code>R</code> (<code>kruskal.test</code>); its multiple comparisons test, <code>kruskal()</code>, is part of the <code>agricolae</code> package, which you have to install.</li>
 <li>Its output is simpler than that of ANOVA.</li>
 <li>It has its own multiple comparisons test, the Kruskal (multiple comparisons) test.</li>
 <li>The Kruskal test output is also simpler than that of Tukey’s HSD.</li>
@@ -1320,7 +1320,7 @@ D-C 178.00   42.657301 313.3427 0.0097522</code></pre>
 </section>
 <section id="example-2-citizens-initiative" class="slide level2">
 <h2>Example #2: Citizen’s Initiative</h2>
-<p>The citizen’s initiatize allows the people of the state to force a vote on a given issue. Do the different political cultures use the initiative at the same rates?</p>
+<p>The citizen’s initiative allows the people of the state to force a vote on a given issue. Do the different political cultures use the initiative at the same rates?</p>
 <p>The hypotheses are:</p>
 <p><span class="math display">\[
 \begin{aligned}
@@ -1375,7 +1375,7 @@ data:  inituse and domPolCulture
 Kruskal-Wallis chi-squared = 6.3238, df = 2, p-value = 0.04235</code></pre>
 </div>
 </div>
-<p>Because the <span class="math inline">\(p\)</span>-value is less that our usual <span class="math inline">\(\alpha = 0.05\)</span>, we reject the null hypothesis. We can conclude that at least one mean differs from the others. Which one?</p>
+<p>Because the <span class="math inline">\(p\)</span>-value is less than our usual <span class="math inline">\(\alpha = 0.05\)</span>, we reject the null hypothesis. We can conclude that at least one mean differs from the others. Which one?</p>
 </section>
 <section id="example-2-citizens-initiative-4" class="slide level2">
 <h2>Example #2: Citizen’s Initiative</h2>
@@ -1512,7 +1512,7 @@ West-Northeast     -19.45043 -270.75207 231.85122 0.9968573
 West-South        -271.53801 -485.05941 -58.01661 0.0075817</code></pre>
 </div>
 </div>
-<p>From this, we now we detected a difference in average violent crime rate between the South and Northwest states and the West and South states, where the South is significantly higher than the Northeast and the South is significantly higher that the West.</p>
+<p>From this, we know we detected a difference in average violent crime rate between the South and Northeast states and between the South and West states, where the South is significantly higher than both the Northeast and the West.</p>
 </section>
 <section id="example-3-violent-crime-5" class="slide level2">
 <h2>Example #3: Violent Crime</h2>
@@ -1526,7 +1526,7 @@ West-South        -271.53801 -485.05941 -58.01661 0.0075817</code></pre>
 </section>
 <section id="example-4-education" class="slide level2">
 <h2>Example #4: Education</h2>
-<p>Does the 2000 violent crime rate significantly vary across the four census regions?</p>
+<p>Does the 2000 weighted average educational achievement (WAEA) significantly vary across the three political cultures?</p>
 <p>The hypotheses are:</p>
 <p><span class="math display">\[
 \begin{aligned}
@@ -1601,12 +1601,12 @@ Traditionalistic-Individualistic -3.840588 -6.1912595 -1.489917 0.0007316
 Traditionalistic-Moralistic      -5.566471 -7.9171418 -3.215799 0.0000019</code></pre>
 </div>
 </div>
-<p>From this, we now we detected a difference in average WAEA rate between the traditionalist states and both of the other two types. In both cases, the traditionalistic states tended to have lower WAEA. No other comparisons were statistically significant.</p>
+<p>From this, we know we detected a difference in average WAEA rate between the traditionalist states and both of the other two types. In both cases, the traditionalistic states tended to have lower WAEA. No other comparisons were statistically significant.</p>
 </section>
 <section id="example-4-education-5" class="slide level2">
 <h2>Example #4: Education</h2>
 <p><strong>Conclusion:</strong></p>
-<p>We are asked to determine if the violent crime rate and the census region are independent. To do this, we would prefer to use the analysis of variance procedure, because it is the most powerful of the available tests. It has two requirements: The data are from a Normal distribution in each group; and the variances are the same across the groups. Neither assumption is violated. The minimum <span class="math inline">\(p\)</span>-value from the Shapiro-Wilk test is 0.6072, which is greater than <span class="math inline">\(\alpha = 0.05\)</span>. The <span class="math inline">\(p\)</span>-value from the Fligner-Killeen test, 0.2381, is also greater than our <span class="math inline">\(\alpha = 0.05\)</span>. Because neither assumption is violated, we can – and should – use the analysis of variance procedure.</p>
+<p>We are asked to determine if WAEA and the dominant political culture are independent. To do this, we would prefer to use the analysis of variance procedure, because it is the most powerful of the available tests. It has two requirements: The data are from a Normal distribution in each group; and the variances are the same across the groups. Neither assumption is violated. The minimum <span class="math inline">\(p\)</span>-value from the Shapiro-Wilk test is 0.6072, which is greater than <span class="math inline">\(\alpha = 0.05\)</span>. The <span class="math inline">\(p\)</span>-value from the Fligner-Killeen test, 0.2381, is also greater than our <span class="math inline">\(\alpha = 0.05\)</span>. Because neither assumption is violated, we can – and should – use the analysis of variance procedure.</p>
 </section>
 <section id="example-4-education-6" class="slide level2">
 <h2>Example #4: Education</h2>
@@ -1669,7 +1669,7 @@ data:  gspcap00 by domPolCulture
 Kruskal-Wallis chi-squared = 13.752, df = 2, p-value = 0.001032</code></pre>
 </div>
 </div>
-<p>Because the <span class="math inline">\(p\)</span>-value of 0.0010 is less than our usual <span class="math inline">\(\alpha = 0.05\)</span>, we reject the null hypothesis. We can conclude that at least one mean differs from the others. Which one? [fragile=singleslide]</p>
+<p>Because the <span class="math inline">\(p\)</span>-value of 0.0010 is less than our usual <span class="math inline">\(\alpha = 0.05\)</span>, we reject the null hypothesis. We can conclude that at least one mean differs from the others. Which one?</p>
 </section>
 <section id="example-5-average-wealth-4" class="slide level2">
 <h2>Example #5: Average Wealth</h2>
@@ -1712,7 +1712,7 @@ attr(,&quot;class&quot;)
 </section>
 <section id="example-5-average-wealth-5" class="slide level2">
 <h2>Example #5: Average Wealth</h2>
-<p>From this, we now we detected a difference in average GSP per capita between the individualistic states and both of the other two types. In both cases, the individualistic states tended to have higher GSP per capita. No other comparisons were statistically significant.</p>
+<p>From this, we know we detected a difference in average GSP per capita between the individualistic states and both of the other two types. In both cases, the individualistic states tended to have higher GSP per capita. No other comparisons were statistically significant.</p>
 </section>
 <section id="example-5-average-wealth-6" class="slide level2">
 <h2>Example #5: Average Wealth</h2>
@@ -1819,7 +1819,7 @@ attr(,&quot;class&quot;)
 </section>
 <section id="example-6-legislature-professionalism-5" class="slide level2">
 <h2>Example #6: Legislature Professionalism</h2>
-<p>From this, we now we detected a diﬀerence in average level of legislative professionalism between the individualistic states and both of the other two types. In both cases, the individualistic states tended to have higher levels of legislative professionalism. No other comparisons were statistically significant.</p>
+<p>From this, we know we detected a difference in average level of legislative professionalism between the individualistic states and both of the other two types. In both cases, the individualistic states tended to have higher levels of legislative professionalism. No other comparisons were statistically significant.</p>
 </section>
 <section id="example-6-legislature-professionalism-6" class="slide level2">
 <h2>Example #6: Legislature Professionalism</h2>
