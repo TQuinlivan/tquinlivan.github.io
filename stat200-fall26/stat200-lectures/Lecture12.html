@@ -442,7 +442,7 @@
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Torin Quinlivan">
-  <meta name="dcterms.date" content="2026-10-15">
+  <meta name="dcterms.date" content="2026-10-27">
   <title>Lecture #12: The Bernoulli, Binomial and Poisson Distributions</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1021,11 +1021,11 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
     </div>
 </div>
 
-  <p class="date">October 15, 2026</p>
+  <p class="date">October 27, 2026</p>
 </section>
 <section id="definition-of-bernoulli-experiment" class="slide level2">
 <h2>Definition of Bernoulli Experiment</h2>
-<p>A random variable with only two possible outcomes follows a <span class="definition">Bernoulli distribution</span> with success probability parameter, <span class="math inline">\(p\)</span>.</p>
+<p>A random variable with only two possible outcomes, failure (<span class="math inline">\(0\)</span>) and success (<span class="math inline">\(1\)</span>), follows a <span class="definition">Bernoulli distribution</span> with success probability parameter, <span class="math inline">\(p\)</span>.</p>
 </section>
 <section id="examples-of-bernoulli-experiments" class="slide level2">
 <h2>Examples of Bernoulli Experiments</h2>
@@ -1203,7 +1203,7 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
 </section>
 <section id="expected-value-of-a-sum-of-random-variables" class="slide level2">
 <h2>Expected Value of a Sum of Random Variables</h2>
-<p>The expected value of a linear combination of random variables is the sum of the expected values of the random variables:</p>
+<p>The expected value of a linear combination of random variables is the same linear combination of their expected values:</p>
 <p><span class="math display">\[
 \mathbb{E}[aX + bY + c] = a\,\mathbb{E}[X] + b\,\mathbb{E}[Y] + c
 \]</span></p>
@@ -1222,7 +1222,7 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
 </section>
 <section id="variance-of-a-sum-of-random-variables" class="slide level2">
 <h2>Variance of a Sum of Random Variables</h2>
-<p>The variance of a linear combination of independent random variables is the sum of the variances of the random variables:</p>
+<p>The variance of a linear combination of <em>independent</em> random variables is the corresponding combination of their variances (with squared coefficients):</p>
 <p><span class="math display">\[
 \mathbb{V}[aX + bY] = a^2\,\mathbb{V}[X] + b^2\,\mathbb{V}[Y]
 \]</span></p>
@@ -1267,8 +1267,8 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
 <section id="example-3-hurricanes-in-the-atlantic" class="slide level2">
 <h2>Example #3: Hurricanes in the Atlantic</h2>
 <p>A researcher has a theory that climate change is causing the intensity of hurricanes in the Atlantic Ocean to increase. Historical data shows that 43% of all Atlantic hurricanes are determined to be a “major hurricane” (Category 3, 4 or 5).</p>
-<p>The researcher looks at 40 Atlantic hurricanes from the last three seasons, and finds that 20 of them were named “major hurricanes”.</p>
-<p>Is this evidence that the amount of “major hurricanes” in the Atlantic has increased in recent years?</p>
+<p>The researcher looks at 40 Atlantic hurricanes from the last three seasons, and finds that 20 of them were classified as “major hurricanes”.</p>
+<p>Is this evidence that the proportion of “major hurricanes” in the Atlantic has increased in recent years?</p>
 </section>
 <section id="definition-of-poisson-experiment" class="slide level2">
 <h2>Definition of Poisson Experiment</h2>
@@ -1362,7 +1362,7 @@ S = \{ 0, 1, 2, \dots \}
 </section>
 <section id="example-5-crime-in-galesburg-2" class="slide level2">
 <h2>Example #5: Crime in Galesburg</h2>
-<p>Now let’s suppose there were 208 violent crimes in Galesburg this year (so the same rate, but over a year rather than a month).</p>
+<p>Now let’s suppose there were 208 violent crimes in Galesburg this year (so the same rate, but over a year rather than four weeks).</p>
 <p>With this new information, is there significant evidence of an uptick in the crime rate?</p>
 <p>Now we have much more data than we did before.</p>
 
