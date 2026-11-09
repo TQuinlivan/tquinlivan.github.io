@@ -1028,6 +1028,7 @@ Torin Quinlivan <a href="https://orcid.org/0000-0002-5045-1948" class="quarto-ti
 <div class="hidden">
 <p><span class="math display">\[
 \DeclareMathOperator*{\argmax}{arg\!max}
+\newcommand{\vect}[1]{\boldsymbol{#1}}
 \newcommand{\dsum}{\displaystyle\sum}
 \newcommand{\dint}{\displaystyle\int}
 \]</span></p>
@@ -1080,7 +1081,7 @@ P(A_i \mid B) = \frac{P(B \mid A_i) P(A_i)}{P(B)} = \frac{P(B \mid A_i) P(A_i)}{
 </section>
 <section id="prior-distribution" class="slide level2">
 <h2>Prior Distribution</h2>
-<p>Because the parameter <span class="math inline">\(\tilde{\theta}\)</span> is treated as a random variable, it has a distribution, <span class="math inline">\(g(\tilde{\theta})\)</span>.</p>
+<p>Because the parameter <span class="math inline">\(\vect{\theta}\)</span> is treated as a random variable, it has a distribution, <span class="math inline">\(g(\vect{\theta})\)</span>.</p>
 <div class="fragment">
 <p>This is called the <span class="definition">prior distribution</span>.</p>
 </div>
@@ -1093,17 +1094,17 @@ P(A_i \mid B) = \frac{P(B \mid A_i) P(A_i)}{P(B)} = \frac{P(B \mid A_i) P(A_i)}{
 </section>
 <section id="likelihood-of-the-data" class="slide level2">
 <h2>Likelihood of the Data</h2>
-<p>Then the data <span class="math inline">\(\tilde{x}\)</span> enter through the likelihood function for our model, <span class="math inline">\(\mathcal{L}(\tilde{\theta} \mid \tilde{x})\)</span>.</p>
+<p>Then the data <span class="math inline">\(\vect{x}\)</span> enter through the likelihood function for our model, <span class="math inline">\(\mathcal{L}(\vect{\theta} \mid \vect{x})\)</span>.</p>
 <div class="fragment">
-<p>This is the probability (or probability density) of observing the data <span class="math inline">\(\tilde{x}\)</span> when the parameter is <span class="math inline">\(\tilde{\theta}\)</span>.</p>
+<p>This is the probability (or probability density) of observing the data <span class="math inline">\(\vect{x}\)</span> when the parameter is <span class="math inline">\(\vect{\theta}\)</span>.</p>
 </div>
 </section>
 <section id="posterior-distribution" class="slide level2">
 <h2>Posterior Distribution</h2>
-<p>Using Bayes’ Theorem, we can find the <span class="definition">posterior distribution</span>, <span class="math inline">\(g(\tilde{\theta} \mid \tilde{x})\)</span>: <span class="math display">\[
+<p>Using Bayes’ Theorem, we can find the <span class="definition">posterior distribution</span>, <span class="math inline">\(g(\vect{\theta} \mid \vect{x})\)</span>: <span class="math display">\[
 \begin{aligned}
-  g(\tilde{\theta} \mid \tilde{x}) &amp;= \frac{\mathcal{L}(\tilde{\theta} \mid \tilde{x}) g(\tilde{\theta})}{\dint_{\Theta} \mathcal{L}(\tilde{t} \mid \tilde{x}) g(\tilde{t}) \, d\tilde{t}} \\[0.5em]
-  g(\tilde{\theta} \mid \tilde{x}) &amp;\propto \mathcal{L}(\tilde{\theta} \mid \tilde{x}) g(\tilde{\theta}),
+  g(\vect{\theta} \mid \vect{x}) &amp;= \frac{\mathcal{L}(\vect{\theta} \mid \vect{x}) g(\vect{\theta})}{\dint_{\Theta} \mathcal{L}(\vect{t} \mid \vect{x}) g(\vect{t}) \, d\vect{t}} \\[0.5em]
+  g(\vect{\theta} \mid \vect{x}) &amp;\propto \mathcal{L}(\vect{\theta} \mid \vect{x}) g(\vect{\theta}),
 \end{aligned}
 \]</span> where <span class="math inline">\(\Theta\)</span> is the set of all possible values of the parameter.</p>
 </section>
@@ -1111,7 +1112,7 @@ P(A_i \mid B) = \frac{P(B \mid A_i) P(A_i)}{P(B)} = \frac{P(B \mid A_i) P(A_i)}{
 <h2>Posterior Distribution</h2>
 <p>The <span class="definition">posterior distribution</span> represents our belief in the distribution of the parameters after we incorporate the data.</p>
 <div class="fragment">
-<p>Because the posterior is a distribution for the parameter <span class="math inline">\(\tilde{\theta}\)</span>, we can then use it as the prior for the next experiment.</p>
+<p>Because the posterior is a distribution for the parameter <span class="math inline">\(\vect{\theta}\)</span>, we can then use it as the prior for the next experiment.</p>
 </div>
 <div class="fragment">
 <p>If we choose a prior such that, given a certain likelihood function, the posterior belongs to the same family of distributions as the prior, we call that a <span class="definition">conjugate prior</span>.</p>
@@ -1133,7 +1134,7 @@ P(A_i \mid B) = \frac{P(B \mid A_i) P(A_i)}{P(B)} = \frac{P(B \mid A_i) P(A_i)}{
 <div class="fragment">
 <p>So the likelihood is: <span class="math display">\[
 \begin{aligned}
-  \mathcal{L}(\theta \mid \tilde{x}) &amp;= \prod_{i=1}^{n} \theta^{x_i} (1 - \theta)^{1 - x_i} \\
+  \mathcal{L}(\theta \mid \vect{x}) &amp;= \prod_{i=1}^{n} \theta^{x_i} (1 - \theta)^{1 - x_i} \\
   &amp;= \theta^{\sum x_i} (1 - \theta)^{n - \sum x_i}.
 \end{aligned}
 \]</span></p>
@@ -1165,7 +1166,7 @@ P(A_i \mid B) = \frac{P(B \mid A_i) P(A_i)}{P(B)} = \frac{P(B \mid A_i) P(A_i)}{
 <h2>Example</h2>
 <p><span class="math display">\[
 \begin{aligned}
-  g(\theta \mid \tilde{x}) &amp;\propto \mathcal{L}(\theta \mid \tilde{x}) g(\theta) \\
+  g(\theta \mid \vect{x}) &amp;\propto \mathcal{L}(\theta \mid \vect{x}) g(\theta) \\
   &amp;= \left( \theta^{\sum x_i} (1 - \theta)^{n - \sum x_i} \right)  \left(  \frac{\Gamma(\alpha + \beta)}{\Gamma(\alpha) \Gamma(\beta)} \theta^{\alpha - 1} (1 - \theta)^{\beta - 1} \right) \\
   &amp;\propto \theta^{\sum x_i + \alpha - 1} (1 - \theta)^{n - \sum x_i + \beta - 1}
 \end{aligned}
@@ -1182,7 +1183,7 @@ P(A_i \mid B) = \frac{P(B \mid A_i) P(A_i)}{P(B)} = \frac{P(B \mid A_i) P(A_i)}{
 <p>Thus, the posterior for our example is <span class="math inline">\(\text{Beta}(\alpha^*, \beta^*)\)</span> with <span class="math inline">\(\alpha^* = \sum x_i + \alpha = 62 + 10 = 72\)</span> and <span class="math inline">\(\beta^* = n - \sum x_i + \beta = 100 - 62 + 10 = 48\)</span>.</p>
 <div class="fragment">
 <p>We can use this to estimate <span class="math inline">\(\theta\)</span>: <span class="math display">\[
-  \widehat{\theta} = E[ \theta \mid \tilde{x} ] = \frac{\alpha^*}{\alpha^* + \beta^*} = \frac{72}{72+48} = \frac{72}{120} = 0.60.
+  \widehat{\theta} = E[ \theta \mid \vect{x} ] = \frac{\alpha^*}{\alpha^* + \beta^*} = \frac{72}{72+48} = \frac{72}{120} = 0.60.
 \]</span></p>
 </div>
 <div class="fragment">
